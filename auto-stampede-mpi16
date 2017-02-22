@@ -4,7 +4,7 @@
 #SBATCH -o auto-particle-mpi16.stdout
 #SBATCH -N 16 
 #SBATCH -n 16         
-#SBATCH -p normal
+#SBATCH -p development
 #SBATCH -t 00:10:00     
 
 rm mpi_sum.txt

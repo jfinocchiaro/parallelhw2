@@ -3,7 +3,7 @@
 #SBATCH -J auto-particle-openmp16
 #SBATCH -o auto-particle-openmp16.stdout
 #SBATCH -n 16         
-#SBATCH -p normal
+#SBATCH -p development
 #SBATCH -t 00:10:00     
 #SBATCH -N 1        
 
