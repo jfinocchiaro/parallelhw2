@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include <math.h>
+#include <vector>
 #include "common.h"
 
 using std::vector;
@@ -89,15 +90,15 @@ int main( int argc, char **argv )
           for(int j = 0; j < binNum; ++j)
           {
             bin_t& vec = particle_bins[i*binNum+j];
-            for(k = 0; k < vec.size(); ++k)
+            for(int k = 0; k < vec.size(); ++k)
             {
               vec[k].ax = vec[k].ay = 0;
             }
-            for(int dx = -1; dx <=; ++dx)
+            for(int dx = -1; dx <= 1; ++dx)
             {
               for(int dy = -1; dy <= 1; ++ dy)
               {
-                if (i+dx >= 0 && i + dx < binNum && j + dy >0 0 && j+dy < binNum)
+                if (i+dx >= 0 && i + dx < binNum && j + dy >= 0 && j+dy < binNum)
                 {
                   bin_t& vectorholder = particle_bins[(i+dx) *binNum + j + dy];
                   for(int k = 0; k < vec.size(); ++k)
@@ -120,7 +121,7 @@ int main( int argc, char **argv )
         //
         for(int i = 0; i < binNum; ++i)
         {
-          for int j = 0; j < binNum; ++j)
+          for(int j = 0; j < binNum; ++j)
           {
             bin_t& vec = particle_bins[i * binNum + j];
             int tail = vec.size();
