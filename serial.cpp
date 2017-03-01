@@ -12,6 +12,7 @@ using std::vector;
 double binSize, gridSize;
 int binNum;
 
+//build bins so we only check for collisions with neighboring bins instead of every other particle
 void buildBins(vector<bin_t>& bins, particle_t* particles, int n)
 {
   gridSize = sqrt(n * _density);
@@ -30,8 +31,6 @@ void buildBins(vector<bin_t>& bins, particle_t* particles, int n)
       int y = int(particles[i].y / binSize);
       bins[x*binNum + y].push_back(particles[i]);
   }
-
-
 
 }
 
@@ -63,7 +62,7 @@ int main( int argc, char **argv )
     FILE *fsum = sumname ? fopen ( sumname, "a" ) : NULL;
 
     particle_t *particles = (particle_t*) malloc( n * sizeof(particle_t) );
-
+    //create one vector that will hold all the particle bins
     vector<bin_t> particle_bins;
     bin_t temp;
     //buildBins(particle_bins, particles, n);
@@ -81,28 +80,35 @@ int main( int argc, char **argv )
       	navg = 0;
         davg = 0.0;
       	dmin = 1.0;
+
         //
         //  compute forces
         //
-
+        //for each bin in grid
         for(int i = 0; i < binNum; ++i)
         {
           for(int j = 0; j < binNum; ++j)
           {
+            //current bin
             bin_t& vec = particle_bins[i*binNum+j];
+            //for particle in bin, initialize ax and ay to 0
             for(int k = 0; k < vec.size(); ++k)
             {
               vec[k].ax = vec[k].ay = 0;
             }
+            //check N/S and E/W neighbors
             for(int dx = -1; dx <= 1; ++dx)
             {
               for(int dy = -1; dy <= 1; ++ dy)
               {
+                //if the bin you're checking for is actually in the grid
                 if (i+dx >= 0 && i + dx < binNum && j + dy >= 0 && j+dy < binNum)
                 {
                   bin_t& vectorholder = particle_bins[(i+dx) *binNum + j + dy];
+                  //for every particle in original vector
                   for(int k = 0; k < vec.size(); ++k)
                   {
+                    //for every particle in neighboring bin
                     for(int l = 0; l < vectorholder.size(); ++l)
                     {
                       apply_force(vec[k], vectorholder[l], &dmin, &davg, &navg);
