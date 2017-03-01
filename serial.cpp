@@ -13,6 +13,29 @@ double binSize, gridSize;
 int binNum;
 
 
+//build bins so we only check for collisions with neighboring bins instead of every other particle
+void buildBins(vector<bin_t>& bins, particle_t* particles, int n)
+{
+  gridSize = sqrt(n * _density);
+  binSize= _cutoff * 2;
+  binNum = int(gridSize/binSize) + 1;
+
+  printf("Grid Size: %.4lf\n",gridSize);
+  printf("Number of Bins: %d*%d\n",binNum,binNum);
+  printf("Bin Size: %.2lf\n",binSize);
+
+  bins.resize(binNum * binNum);
+
+  for(int i = 0; i < n; ++i)
+  {
+      int x = int(particles[i].x / binSize);
+      int y = int(particles[i].y / binSize);
+      bins[x*binNum + y].push_back(particles[i]);
+  }
+
+}
+
+
 //
 //  benchmarking program
 //
