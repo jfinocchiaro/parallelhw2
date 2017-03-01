@@ -32,17 +32,22 @@ int main( int argc, char **argv )
     FILE *fsum = sumname ? fopen ( sumname, "a" ) : NULL;
 
     particle_t *particles = (particle_t*) malloc( n * sizeof(particle_t) );
+    vector<bin_t> particle_bins;
+
     set_size( n );
     init_particles( n, particles );
-
+    buildBins(particle_bins, particles, n);
     //
     //  simulate a number of time steps
     //
     double simulation_time = read_timer( );
 
+
+
     #pragma omp parallel private(dmin)
     {
       numthreads = omp_get_num_threads();
+      printf("%d threads total", numthreads);
       for( int step = 0; step < 1000; step++ )
       {
           navg = 0;
