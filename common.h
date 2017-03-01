@@ -39,7 +39,7 @@ void set_size( int n );
 void init_particles( int n, particle_t *p );
 void apply_force( particle_t &particle, particle_t &neighbor , double *dmin, double *davg, int *navg);
 void move( particle_t &p );
-
+void buildBins(vector<bin_t>& bins, particle_t* particles, int n);
 
 //
 //  I/O routines
