@@ -5,6 +5,9 @@
 #include "common.h"
 #include "omp.h"
 
+#define _cutoff 0.01
+#define _density 0.0005
+
 //
 //  benchmarking program
 //
@@ -34,12 +37,17 @@ int main( int argc, char **argv )
     particle_t *particles = (particle_t*) malloc( n * sizeof(particle_t) );
     vector<bin_t> particle_bins;
 
+
+    double gridSize = sqrt(n * _density);
+    double binSize = _cutoff * 2;
+    int binNum = int(gridSize/binSize) + 1;
+
     set_size( n );
     init_particles( n, particles );
     buildBins(particle_bins, particles, n);
-    //
+
+
     //  simulate a number of time steps
-    //
     double simulation_time = read_timer( );
 
 
@@ -58,14 +66,41 @@ int main( int argc, char **argv )
           //  reduction clause lists variables upon which a reduction operation will be done at the end of the parallel region
           #pragma omp for reduction (+:navg) reduction(+:davg)
           {
-            //for each particle
-            for( int i = 0; i < n; i++ )
+            //for each bin
+            for( int i = 0; i < binNum; i++ )
             {
-                //initialize ax and ay to 0
-                particles[i].ax = particles[i].ay = 0;
-                //for every particle (to compare to original)
-                for (int j = 0; j < n; j++ )
-                    apply_force( particles[i], particles[j],&dmin,&davg,&navg);
+              for (int j = 0; j < binNum; j ++)
+              {
+                //get a vector of particles in the current bin
+                bin_t& vec = particle_bins[i*binNum + j];
+                //for each particle in current bin
+                for(int k = 0; k < vec.size(); ++k)
+                {
+                  //initialize ax and ay to 0
+                  vec[k].ax = vec[k].ay = 0;
+                }
+                //check N/S and E/W neighbors
+                for(int dx = -1; dx <= 1; ++dx)
+                {
+                  for(int dy = -1; dy <= 1; ++ dy)
+                  {
+                    //if the bin you're checking for is actually in the grid
+                    if (i+dx >= 0 && i + dx < binNum && j + dy >= 0 && j+dy < binNum)
+                    {
+                      bin_t& vectorholder = particle_bins[(i+dx) *binNum + j + dy];
+                      //for every particle in original vector
+                      for(int k = 0; k < vec.size(); ++k)
+                      {
+                        //for every particle in neighboring bin
+                        for(int l = 0; l < vectorholder.size(); ++l)
+                        {
+                          apply_force(vec[k], vectorholder[l], &dmin, &davg, &navg);
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
 
