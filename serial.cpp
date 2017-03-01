@@ -18,9 +18,9 @@ void buildBins(vector<bin_t>& bins, particle_t* particles, int n)
   binSize= _cutoff * 2;
   binNum = int(gridSize/binSize) + 1;
 
-  // printf("Grid Size: %.4lf\n",gridSize);
-  // printf("Number of Bins: %d*%d\n",binNum,binNum);
-  // printf("Bin Size: %.2lf\n",binSize);
+  printf("Grid Size: %.4lf\n",gridSize);
+  printf("Number of Bins: %d*%d\n",binNum,binNum);
+  printf("Bin Size: %.2lf\n",binSize);
 
   bins.resize(binNum * binNum);
 
@@ -66,7 +66,7 @@ int main( int argc, char **argv )
 
     vector<bin_t> particle_bins;
     bin_t temp;
-
+    //buildBins(particle_bins, particles, n);
 
     set_size( n );
     init_particles( n, particles );
