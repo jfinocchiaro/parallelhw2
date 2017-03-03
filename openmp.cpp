@@ -3,7 +3,8 @@
 #include <assert.h>
 #include <math.h>
 #include "common.h"
-#include "omp.h"
+#include <omp.h>
+#include "grid.h"
 
 //
 //  benchmarking program
@@ -25,6 +26,7 @@ int main( int argc, char **argv )
     }
     //number of particles
     int n = read_int( argc, argv, "-n", 1000 );
+
     char *savename = read_string( argc, argv, "-o", NULL );
     char *sumname = read_string( argc, argv, "-s", NULL );
 
@@ -32,22 +34,37 @@ int main( int argc, char **argv )
     FILE *fsum = sumname ? fopen ( sumname, "a" ) : NULL;
 
     particle_t *particles = (particle_t*) malloc( n * sizeof(particle_t) );
-    vector<bin_t> particle_bins;
+    //size of grids
+    double size = set_size(n);
 
-    set_size( n );
+    //initialize the particles at pre-defined density
     init_particles( n, particles );
-    buildBins(particle_bins, particles, n);
-    //
+
+    //create grid that does binning
+    int gridSize = (size/cutoff) + 1;
+    grid_t grid;
+    //initialize the grid with given params
+    grid_init(grid, gridSize);
+    //add all particles to grid
+    for (int i = 0; i < n; ++i)
+    {
+        grid_add(grid, &particles[i]);
+    }
+
+    // Set number of threads
+    omp_set_num_threads(n_threads);
+
+
     //  simulate a number of time steps
-    //
-    double simulation_time = read_timer( );
+    double simulation_time = read_timer();
 
 
     //runs in parallel, dmin is private to each thread
-    #pragma omp parallel private(dmin)
+    #pragma omp parallel
     {
       numthreads = omp_get_num_threads();
       printf("%d threads total", numthreads);
+
       for( int step = 0; step < 1000; step++ )
       {
           navg = 0;
@@ -56,26 +73,53 @@ int main( int argc, char **argv )
           //
           //  compute all forces
           //  reduction clause lists variables upon which a reduction operation will be done at the end of the parallel region
-          #pragma omp for reduction (+:navg) reduction(+:davg)
-          {
+          #pragma omp for //reduction (+:navg) reduction(+:davg)
             //for each particle
             for( int i = 0; i < n; i++ )
             {
                 //initialize ax and ay to 0
                 particles[i].ax = particles[i].ay = 0;
                 //for every particle (to compare to original)
-                for (int j = 0; j < n; j++ )
+                /*for (int j = 0; j < n; j++ )
                     apply_force( particles[i], particles[j],&dmin,&davg,&navg);
-            }
-          }
+                */
+                int gx = grid_coord(particles[i].x);
+                int gy = grid_coord(particles[i].y);
+                //for loop over neighboring bins
+                for(int x = Max(gx-1, 0); x <= Min(gx+1, gridSize-1); ++x)
+                {
+                  for(int y = Max(gy-1, 0); y <= Min(gy+1, gridSize-1); ++y)
+                  {
+                    linkedlist_t * curr = grid.grid[x*grid.size + y];
+                    while(curr != 0)
+                    {
+                      apply_force(particles[i], *(curr->value));
+                      curr = curr->next;
+                    }
+                  }
+                }
+              }
 
-          //
+
+
           //  move particles
           //  openmp loop
           #pragma omp for
           {
-            for( int i = 0; i < n; i++ )
+            for( int i = 0; i < n; ++i)
+              {
+                //get grid coorinate (bin number) for the current particle
+                int gc = grid_coord_flat(grid.size, particles[i].x, particles[i].y);
                 move( particles[i] );
+
+                // Re-add the particle if it has changed grid position
+                if (gc != grid_coord_flat(grid.size, particles[i].x, particles[i].y))
+                {
+                    grid_add(grid, &particles[i]);
+                }
+
+              }
+
           }
 
           if( find_option( argc, argv, "-no" ) == -1 )
@@ -105,7 +149,7 @@ int main( int argc, char **argv )
                 save( fsave, n, particles );
             }//end if -no option is included.
       }//end for loop of steps (1000)
-  }//end pragma omp private
+  }//end pragma omp parallel
     simulation_time = read_timer( ) - simulation_time;
 
     printf( "n = %d,threads = %d, simulation time = %g seconds", n,numthreads, simulation_time);

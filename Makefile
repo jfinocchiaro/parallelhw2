@@ -1,5 +1,5 @@
 #
-# Stampede - TACC 
+# Stampede - TACC
 #
 # Intel Compilers are loaded by default; for other compilers please check the module list
 #
@@ -28,8 +28,8 @@ mpi: mpi.o common.o
 autograder.o: autograder.cpp common.h
 	$(CC) -c $(CFLAGS) autograder.cpp
 openmp.o: openmp.cpp common.h
-	$(CC) -c $(OPENMP) $(CFLAGS) openmp.cpp
-serial.o: serial.cpp common.h
+	$(CC) -c $(OPENMP) $(CFLAGS) openmp.cpp grid.cpp -lm -fopenmp
+serial.o: serial.cpp common.h bin.h
 	$(CC) -c $(CFLAGS) serial.cpp
 pthreads.o: pthreads.cpp common.h
 	$(CC) -c $(CFLAGS) pthreads.cpp
