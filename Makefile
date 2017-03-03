@@ -20,16 +20,16 @@ autograder: autograder.o common.o
 	$(CC) -o $@ $(LIBS) autograder.o common.o
 pthreads: pthreads.o common.o
 	$(CC) -o $@ $(LIBS) -lpthread pthreads.o common.o
-openmp: openmp.o common.o
-	$(CC) -o $@ $(LIBS) $(OPENMP) openmp.o common.o
+openmp: openmp.o common.o grid.o
+	$(CC) -o $@ $(LIBS) $(OPENMP) openmp.o common.o grid.o
 mpi: mpi.o common.o
 	$(MPCC) -o $@ $(LIBS) $(MPILIBS) mpi.o common.o
 
 autograder.o: autograder.cpp common.h
 	$(CC) -c $(CFLAGS) autograder.cpp
 openmp.o: openmp.cpp common.h
-	$(CC) -c $(OPENMP) $(CFLAGS) openmp.cpp grid.cpp -lm -fopenmp
-serial.o: serial.cpp common.h bin.h
+	$(CC) -c $(OPENMP) $(CFLAGS) openmp.cpp 
+serial.o: serial.cpp common.h 
 	$(CC) -c $(CFLAGS) serial.cpp
 pthreads.o: pthreads.cpp common.h
 	$(CC) -c $(CFLAGS) pthreads.cpp

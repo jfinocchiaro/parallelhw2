@@ -45,6 +45,12 @@ void set_size( int n )
 }
 
 
+double sizeSize(int n)
+{
+	size = sqrt(density * n);
+	return size;
+}
+
 //  Initialize the particle positions and velocities
 void init_particles( int n, particle_t *p )
 {

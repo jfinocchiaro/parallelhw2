@@ -35,7 +35,7 @@ int main( int argc, char **argv )
 
     particle_t *particles = (particle_t*) malloc( n * sizeof(particle_t) );
     //size of grids
-    double size = set_size(n);
+    double size = setSize(n);
 
     //initialize the particles at pre-defined density
     init_particles( n, particles );
@@ -52,7 +52,7 @@ int main( int argc, char **argv )
     }
 
     // Set number of threads
-    omp_set_num_threads(n_threads);
+    omp_set_num_threads(numthreads);
 
 
     //  simulate a number of time steps
@@ -69,7 +69,7 @@ int main( int argc, char **argv )
       {
           navg = 0;
           davg = 0.0;
-  	      dmin = 1.0;
+          dmin = 1.0;
           //
           //  compute all forces
           //  reduction clause lists variables upon which a reduction operation will be done at the end of the parallel region
@@ -86,14 +86,14 @@ int main( int argc, char **argv )
                 int gx = grid_coord(particles[i].x);
                 int gy = grid_coord(particles[i].y);
                 //for loop over neighboring bins
-                for(int x = Max(gx-1, 0); x <= Min(gx+1, gridSize-1); ++x)
+                for(int x = max(gx-1, 0); x <= min(gx+1, gridSize-1); ++x)
                 {
-                  for(int y = Max(gy-1, 0); y <= Min(gy+1, gridSize-1); ++y)
+                  for(int y = max(gy-1, 0); y <= min(gy+1, gridSize-1); ++y)
                   {
                     linkedlist_t * curr = grid.grid[x*grid.size + y];
                     while(curr != 0)
                     {
-                      apply_force(particles[i], *(curr->value));
+                      apply_force(particles[i], *(curr->value), &dmin, &davg, &navg);
                       curr = curr->next;
                     }
                   }
@@ -105,8 +105,7 @@ int main( int argc, char **argv )
           //  move particles
           //  openmp loop
           #pragma omp for
-          {
-            for( int i = 0; i < n; ++i)
+          for( int i = 0; i < n; ++i)
               {
                 //get grid coorinate (bin number) for the current particle
                 int gc = grid_coord_flat(grid.size, particles[i].x, particles[i].y);
@@ -120,7 +119,7 @@ int main( int argc, char **argv )
 
               }
 
-          }
+          
 
           if( find_option( argc, argv, "-no" ) == -1 )
           {

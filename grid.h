@@ -2,7 +2,13 @@
 #define __GRID_H_
 
 #include "common.h"
+#define cutoff 0.01
 
+struct linkedlist 
+{
+	linkedlist * next;
+	particle_t * value;
+};
 
 typedef struct linkedlist linkedlist_t;
 
@@ -13,7 +19,7 @@ struct grid
 	omp_lock_t * lock;
 };
 
-typedef struct grid linkedlist_t;
+typedef struct grid grid_t;
 
 //
 // grid routines
