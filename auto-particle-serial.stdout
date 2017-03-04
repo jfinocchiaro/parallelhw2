@@ -1,11 +1,26 @@
-n = 500, simulation time = 1.3e-05 seconds
-n = 1000, simulation time = 1.3e-05 seconds
-n = 2000, simulation time = 1.3e-05 seconds
-n = 4000, simulation time = 1.3e-05 seconds
-n = 8000, simulation time = 1.3e-05 seconds
+Grid Size: 0.5000
+Number of Bins: 26*26
+Bin Size: 0.02
+n = 500, simulation time = 0.111045 seconds
+Grid Size: 0.7071
+Number of Bins: 36*36
+Bin Size: 0.02
+n = 1000, simulation time = 0.222564 seconds
+Grid Size: 1.0000
+Number of Bins: 51*51
+Bin Size: 0.02
+n = 2000, simulation time = 0.456209 seconds
+Grid Size: 1.4142
+Number of Bins: 71*71
+Bin Size: 0.02
+n = 4000, simulation time = 0.916585 seconds
+Grid Size: 2.0000
+Number of Bins: 101*101
+Bin Size: 0.02
+n = 8000, simulation time = 1.84898 seconds
 
 Serial code is O(N^slope)
-Slope estimates are : 0.000000 0.000000 0.000000 0.000000
-Slope estimate for line fit is: -0.000000
+Slope estimates are : 1.003076 1.035475 1.006574 1.012389
+Slope estimate for line fit is: 1.015707
 Serial Grade =  100.00
 

@@ -53,7 +53,7 @@ int main( int argc, char **argv )
     }
 
     // Set number of threads
-    omp_set_num_threads(numthreads);
+    //omp_set_num_threads(numthreads);
 
 
     //  simulate a number of time steps
@@ -63,11 +63,10 @@ int main( int argc, char **argv )
     //runs in parallel, dmin is private to each thread
     #pragma omp parallel
     {
-      numthreads = omp_get_num_threads();
-      printf("%d threads total", numthreads);
+      
 
-      for( int step = 0; step < 1000; step++ )
-      {
+      //for( int step = 0; step < 1000; step++ )
+      //{
           navg = 0;
           davg = 0.0;
           dmin = 1.0;
@@ -145,10 +144,10 @@ int main( int argc, char **argv )
             //  save if necessary
             //
             #pragma omp master
-            if( fsave && (step%SAVEFREQ) == 0 )
+            if( fsave  == 0 )
                 save( fsave, n, particles );
             }//end if -no option is included.
-      }//end for loop of steps (1000)
+     // }//end for loop of steps (1000)
   }//end pragma omp parallel
     simulation_time = read_timer( ) - simulation_time;
 

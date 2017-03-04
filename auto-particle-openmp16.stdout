@@ -1,16 +1,30 @@
-rm: cannot remove `openmp_sum.txt': No such file or directory
 Grid Size: 0.5000
 Number of Bins: 26*26
 Bin Size: 0.02
-n = 500, simulation time = 0.110664 seconds
-OMP: Error #34: System unable to allocate necessary resources for OMP thread:
-OMP: System error #11: Resource temporarily unavailable
-OMP: Hint: Try decreasing the value of OMP_NUM_THREADS.
-/tmp/slurmd/job8333419/slurm_script: line 13: 63620 Aborted                 ./openmp -n 500 -no -s openmp_sum.txt
-1 threads totaln = 500,threads = 1, simulation time = 6.30952 seconds
-1 threads totaln = 500,threads = 1, simulation time = 6.60137 seconds
-1 threads totaln = 500,threads = 1, simulation time = 6.53951 seconds
-1 threads totaln = 500,threads = 1, simulation time = 6.50166 seconds
-1 threads totaln = 1000,threads = 1, simulation time = 18.9525 seconds
-53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads total53 threads totaln = 2000,threads = 53, simulation time = 7.00981 seconds
-1 threads totaln = 4000,threads = 1, simulation time = 200.648 seconds
+n = 500, simulation time = 0.111309 seconds
+n = 500,threads = 0, simulation time = 0.000351 seconds
+n = 500,threads = 0, simulation time = 0.000485 seconds
+n = 500,threads = 0, simulation time = 0.000722 seconds
+n = 500,threads = 0, simulation time = 0.005073 seconds
+n = 500,threads = 0, simulation time = 0.059405 seconds
+n = 1000,threads = 0, simulation time = 0.000458 seconds
+n = 2000,threads = 0, simulation time = 0.000618 seconds
+n = 4000,threads = 0, simulation time = 0.004309 seconds
+n = 8000,threads = 0, simulation time = 0.056219 seconds
+
+Strong scaling estimates are :
+  317.12  229.50  154.17   21.94    1.87 (speedup)
+  317.12     inf     inf     inf     inf (efficiency)    for
+       0       0       0       0       0 threads/processors
+
+Average strong scaling efficiency:     inf 
+
+Weak scaling estimates are :
+  317.12  243.03  180.11   25.83    1.98 (efficiency)    for
+       0       0       0       0       0 threads/processors
+
+Average weak scaling efficiency:  153.62 
+
+
+openmp Grade =  100.00
+
