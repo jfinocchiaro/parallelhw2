@@ -44,8 +44,7 @@ void set_size( int n )
     size = sqrt( density * n );
 }
 
-
-double sizeSize(int n)
+double setSize(int n)
 {
 	size = sqrt(density * n);
 	return size;

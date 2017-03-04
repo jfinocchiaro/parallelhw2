@@ -3,8 +3,9 @@
 #include <assert.h>
 #include <math.h>
 #include "common.h"
-#include <omp.h>
+#include "omp.h"
 #include "grid.h"
+
 
 //
 //  benchmarking program

@@ -57,7 +57,7 @@ void grid_add(grid_t & grid, particle_t * p)
     grid.grid[gridCoord] = newElement;
     // End of critical section
     omp_unset_lock(&grid.lock[gridCoord]);
-    add_critical_time(read_timer() - critical_time);
+    //add_critical_time(read_timer() - critical_time);
 }
 
 //
@@ -93,7 +93,7 @@ bool grid_remove(grid_t & grid, particle_t * p, int gridCoord)
     }
 
     omp_unset_lock(&grid.lock[gridCoord]);
-    add_critical_time(read_timer() - critical_time);
+    //add_critical_time(read_timer() - critical_time);
     return !!current;
 }
 
