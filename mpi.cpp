@@ -8,12 +8,12 @@
 //  benchmarking program
 //
 int main( int argc, char **argv )
-{    
+{
     int navg, nabsavg=0;
     double dmin, absmin=1.0,davg,absavg=0.0;
     double rdavg,rdmin;
-    int rnavg; 
- 
+    int rnavg;
+
     //
     //  process command line parameters
     //
@@ -27,19 +27,19 @@ int main( int argc, char **argv )
         printf( "-no turns off all correctness checks and particle output\n");
         return 0;
     }
-    
+
     int n = read_int( argc, argv, "-n", 1000 );
     char *savename = read_string( argc, argv, "-o", NULL );
     char *sumname = read_string( argc, argv, "-s", NULL );
-    
+
     //
     //  set up MPI
-    //
+    //  use MPI to get number of particles per processor and find master processor
     int n_proc, rank;
     MPI_Init( &argc, &argv );
     MPI_Comm_size( MPI_COMM_WORLD, &n_proc );
     MPI_Comm_rank( MPI_COMM_WORLD, &rank );
-    
+
     //
     //  allocate generic resources
     //
@@ -48,37 +48,38 @@ int main( int argc, char **argv )
 
 
     particle_t *particles = (particle_t*) malloc( n * sizeof(particle_t) );
-    
+
     MPI_Datatype PARTICLE;
     MPI_Type_contiguous( 6, MPI_DOUBLE, &PARTICLE );
     MPI_Type_commit( &PARTICLE );
-    
+
     //
     //  set up the data partitioning across processors
-    //
+    //  calculate number for load balancing
     int particle_per_proc = (n + n_proc - 1) / n_proc;
     int *partition_offsets = (int*) malloc( (n_proc+1) * sizeof(int) );
+    //allocate particles per processor
     for( int i = 0; i < n_proc+1; i++ )
         partition_offsets[i] = min( i * particle_per_proc, n );
-    
+
     int *partition_sizes = (int*) malloc( n_proc * sizeof(int) );
     for( int i = 0; i < n_proc; i++ )
         partition_sizes[i] = partition_offsets[i+1] - partition_offsets[i];
-    
+
     //
     //  allocate storage for local partition
     //
     int nlocal = partition_sizes[rank];
     particle_t *local = (particle_t*) malloc( nlocal * sizeof(particle_t) );
-    
+
     //
     //  initialize and distribute the particles (that's fine to leave it unoptimized)
-    //
+    //  only initializes particles on "master" processor
     set_size( n );
     if( rank == 0 )
         init_particles( n, particles );
     MPI_Scatterv( particles, partition_sizes, partition_offsets, PARTICLE, local, nlocal, PARTICLE, 0, MPI_COMM_WORLD );
-    
+
     //
     //  simulate a number of time steps
     //
@@ -88,18 +89,18 @@ int main( int argc, char **argv )
         navg = 0;
         dmin = 1.0;
         davg = 0.0;
-        // 
-        //  collect all global data locally (not good idea to do)
         //
+        //  collect all global data locally (not good idea to do)
+        //  change this^?
         MPI_Allgatherv( local, nlocal, PARTICLE, particles, partition_sizes, partition_offsets, PARTICLE, MPI_COMM_WORLD );
-        
+
         //
         //  save current step if necessary (slightly different semantics than in other codes)
         //
         if( find_option( argc, argv, "-no" ) == -1 )
           if( fsave && (step%SAVEFREQ) == 0 )
             save( fsave, n, particles );
-        
+
         //
         //  compute all forces
         //
@@ -109,15 +110,15 @@ int main( int argc, char **argv )
             for (int j = 0; j < n; j++ )
                 apply_force( local[i], particles[j], &dmin, &davg, &navg );
         }
-     
+
         if( find_option( argc, argv, "-no" ) == -1 )
         {
-          
+
           MPI_Reduce(&davg,&rdavg,1,MPI_DOUBLE,MPI_SUM,0,MPI_COMM_WORLD);
           MPI_Reduce(&navg,&rnavg,1,MPI_INT,MPI_SUM,0,MPI_COMM_WORLD);
           MPI_Reduce(&dmin,&rdmin,1,MPI_DOUBLE,MPI_MIN,0,MPI_COMM_WORLD);
 
- 
+
           if (rank == 0){
             //
             // Computing statistical data
@@ -137,14 +138,14 @@ int main( int argc, char **argv )
             move( local[i] );
     }
     simulation_time = read_timer( ) - simulation_time;
-  
-    if (rank == 0) {  
+
+    if (rank == 0) {
       printf( "n = %d, simulation time = %g seconds", n, simulation_time);
 
       if( find_option( argc, argv, "-no" ) == -1 )
       {
         if (nabsavg) absavg /= nabsavg;
-      // 
+      //
       //  -the minimum distance absmin between 2 particles during the run of the simulation
       //  -A Correct simulation will have particles stay at greater than 0.4 (of cutoff) with typical values between .7-.8
       //  -A simulation were particles don't interact correctly will be less than 0.4 (of cutoff) with typical values between .01-.05
@@ -155,15 +156,15 @@ int main( int argc, char **argv )
       if (absmin < 0.4) printf ("\nThe minimum distance is below 0.4 meaning that some particle is not interacting");
       if (absavg < 0.8) printf ("\nThe average distance is below 0.8 meaning that most particles are not interacting");
       }
-      printf("\n");     
-        
-      //  
+      printf("\n");
+
+      //
       // Printing summary data
-      //  
+      //
       if( fsum)
         fprintf(fsum,"%d %d %g\n",n,n_proc,simulation_time);
     }
-  
+
     //
     //  release resources
     //
@@ -175,8 +176,8 @@ int main( int argc, char **argv )
     free( particles );
     if( fsave )
         fclose( fsave );
-    
+    //close MPI routine
     MPI_Finalize( );
-    
+
     return 0;
 }
