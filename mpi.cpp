@@ -56,9 +56,14 @@ int main( int argc, char **argv )
     }
 
     int n = read_int( argc, argv, "-n", 1000 );
-
     char *savename = read_string( argc, argv, "-o", NULL );
     char *sumname = read_string( argc, argv, "-s", NULL );
+
+    int n_proc, rank;
+    MPI_INIT(&argc, &argv);
+    MPI_Comm_size(MPI_COMM_WORLD, &n_proc);
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+
 
     FILE *fsave = savename ? fopen( savename, "w" ) : NULL;
     FILE *fsum = sumname ? fopen ( sumname, "a" ) : NULL;
@@ -100,13 +105,12 @@ int main( int argc, char **argv )
               vec[k].ax = vec[k].ay = 0;
             }
             //check N/S and E/W neighbors
-            for(int dx = -1; dx <= 1; ++dx)
+            for(int dx = max(0, i-1); dx <= min(binNum, i+1); ++dx)
             {
-              for(int dy = -1; dy <= 1; ++ dy)
+              for(int dy = max(0, j-1); dy <= min(binNum, j+1); ++ dy)
               {
                 //if the bin you're checking for is actually in the grid
-                if (i+dx >= 0 && i + dx < binNum && j + dy >= 0 && j+dy < binNum)
-                {
+
                   bin_t& vectorholder = particle_bins[(i+dx) *binNum + j + dy];
                   //for every particle in original vector
                   for(int k = 0; k < vec.size(); ++k)
@@ -217,5 +221,6 @@ int main( int argc, char **argv )
     if( fsave )
         fclose( fsave );
 
+    MPI_Finalize();
     return 0;
 }
