@@ -74,6 +74,21 @@ int main( int argc, char **argv )
     bin_t temp;
 
 
+    int si = sizeof(int);
+    int sd = sizeof(double);
+    int ind = -si;
+    int blens[] = {1, 1, 1, 1, 1, 1, 1, 1};
+    MPI_Aint indices[] = {ind += si,
+                          ind += sd, ind += sd, ind += sd, 
+                          ind += sd, ind += sd, ind += sd, sizeof(particle_t)};
+    MPI_Datatype oldtypes[] = { MPI_INTEGER,
+                                MPI_DOUBLE, MPI_DOUBLE, MPI_DOUBLE,
+                                MPI_DOUBLE, MPI_DOUBLE, MPI_DOUBLE, MPI_UB  };
+
+    MPI_Datatype PARTICLE;
+    MPI_Type_struct(8,blens,indices, oldtypes, &PARTICLE);
+    MPI_Type_commit(&PARTICLE);
+
     double size = setSize( n );
     if(rank == 0)
     {
