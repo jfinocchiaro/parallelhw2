@@ -74,8 +74,12 @@ int main( int argc, char **argv )
     bin_t temp;
 
 
-    set_size( n );
-    init_particles( n, particles );
+    double size = setSize( n );
+    if(rank == 0)
+    {
+      init_particles( n, particles );
+    }
+
     buildBins(particle_bins, particles, n);
 
     //
@@ -85,6 +89,8 @@ int main( int argc, char **argv )
 
     for( int step = 0; step < NSTEPS; step++ )
     {
+
+      MPI_Barrier(MPI_COMM_WORLD);
       	navg = 0;
         davg = 0.0;
       	dmin = 1.0;
@@ -110,7 +116,6 @@ int main( int argc, char **argv )
               for(int dy = max(0, j-1); dy <= min(binNum, j+1); ++ dy)
               {
                 //if the bin you're checking for is actually in the grid
-
                   bin_t& vectorholder = particle_bins[(i+dx) *binNum + j + dy];
                   //for every particle in original vector
                   for(int k = 0; k < vec.size(); ++k)
