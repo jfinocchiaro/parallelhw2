@@ -60,7 +60,7 @@ int main( int argc, char **argv )
     char *sumname = read_string( argc, argv, "-s", NULL );
 
     int n_proc, rank;
-    MPI_INIT(&argc, &argv);
+    MPI_Init(&argc, &argv);
     MPI_Comm_size(MPI_COMM_WORLD, &n_proc);
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 
@@ -187,13 +187,13 @@ int main( int argc, char **argv )
           //
           //  save if necessary
           //
-          if( fsave && (step%SAVEFREQ) == 0 )
+          if( fsave )
               save( fsave, n, particles );
         }
     }
-    simulation_time = read_timer( ) - simulation_time;
+    double simulation_time = read_timer( ) - simulation_time;
 
-    printf( "n = %d, simulation time = %g seconds", n, simulation_time);
+    printf( "n = %d, simulation time = %d seconds", n, simulation_time);
 
     if( find_option( argc, argv, "-no" ) == -1 )
     {
