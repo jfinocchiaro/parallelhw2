@@ -1,246 +1,304 @@
+#include <mpi.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <assert.h>
-#include <math.h>
-#include <vector>
+#include <string.h>
+
 #include "common.h"
+#include "grid.h"
 
-using std::vector;
-
-#define _cutoff 0.01 //copied from common.cpp
-#define _density 0.0005 //copied from common.cpp
-double binSize, gridSize;
-int binNum;
-
-
-//build bins so we only check for collisions with neighboring bins instead of every other particle
-void buildBins(vector<bin_t>& bins, particle_t* particles, int n)
-{
-  gridSize = sqrt(n * _density);
-  binSize= _cutoff * 2;
-  binNum = int(gridSize/binSize) + 1;
-
-  printf("Grid Size: %.4lf\n",gridSize);
-  printf("Number of Bins: %d*%d\n",binNum,binNum);
-  printf("Bin Size: %.2lf\n",binSize);
-
-  bins.resize(binNum * binNum);
-
-  for(int i = 0; i < n; ++i)
-  {
-      int x = int(particles[i].x / binSize);
-      int y = int(particles[i].y / binSize);
-      bins[x*binNum + y].push_back(particles[i]);
-  }
-
-}
-
+#define DEBUG 1
 
 //
-//  benchmarking program
+//  Benchmarking program
 //
-int main( int argc, char **argv )
+int main(int argc, char **argv)
 {
-    int navg,nabsavg=0;
-    double davg,dmin, absmin=1.0, absavg=0.0;
-
-    if( find_option( argc, argv, "-h" ) >= 0 )
+    //
+    //  Process command line parameters
+    //
+    if (find_option(argc, argv, "-h") >= 0)
     {
-        printf( "Options:\n" );
-        printf( "-h to see this help\n" );
-        printf( "-n <int> to set the number of particles\n" );
-        printf( "-o <filename> to specify the output file name\n" );
-        printf( "-s <filename> to specify a summary file name\n" );
-        printf( "-no turns off all correctness checks and particle output\n");
+        printf("Options:\n");
+        printf("-h to see this help\n");
+        printf("-n <int> to set the number of particles\n");
+        printf("-o <filename> to specify the output file name\n");
+        printf( "-s <int> to set the number of steps in the simulation\n" );
+        printf( "-f <int> to set the frequency of saving particle coordinates (e.g. each ten's step)\n" );
         return 0;
     }
 
-    int n = read_int( argc, argv, "-n", 1000 );
-    char *savename = read_string( argc, argv, "-o", NULL );
-    char *sumname = read_string( argc, argv, "-s", NULL );
+    int n = read_int(argc, argv, "-n", 1000);
+    int nsteps = read_int(argc, argv, "-s", NSTEPS);
+    int savefreq = read_int(argc, argv, "-f", SAVEFREQ);
+    char *savename = read_string(argc, argv, "-o", NULL);
 
+    //
+    //  Set up MPI
+    //
     int n_proc, rank;
     MPI_Init(&argc, &argv);
     MPI_Comm_size(MPI_COMM_WORLD, &n_proc);
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 
+    //
+    //  Allocate generic resources
+    //
+    FILE *fsave = savename ? fopen(savename, "w") : NULL;
+    particle_t * particles = (particle_t*) malloc(n * sizeof(particle_t));
+    grid_t grid;
 
-    FILE *fsave = savename ? fopen( savename, "w" ) : NULL;
-    FILE *fsum = sumname ? fopen ( sumname, "a" ) : NULL;
-
-    particle_t *particles = (particle_t*) malloc( n * sizeof(particle_t) );
-    //create one vector that will hold all the particle bins
-    vector<bin_t> particle_bins;
-    bin_t temp;
-
-
+    //
+    // Define particle_t in mpi
+    //
     int si = sizeof(int);
     int sd = sizeof(double);
     int ind = -si;
     int blens[] = {1, 1, 1, 1, 1, 1, 1, 1};
     MPI_Aint indices[] = {ind += si,
-                          ind += sd, ind += sd, ind += sd, 
+                          ind += sd, ind += sd, ind += sd,
                           ind += sd, ind += sd, ind += sd, sizeof(particle_t)};
     MPI_Datatype oldtypes[] = { MPI_INTEGER,
                                 MPI_DOUBLE, MPI_DOUBLE, MPI_DOUBLE,
                                 MPI_DOUBLE, MPI_DOUBLE, MPI_DOUBLE, MPI_UB  };
 
     MPI_Datatype PARTICLE;
-    MPI_Type_struct(8,blens,indices, oldtypes, &PARTICLE);
+    MPI_Type_struct(8, blens, indices, oldtypes, &PARTICLE);
     MPI_Type_commit(&PARTICLE);
 
-    double size = setSize( n );
-    if(rank == 0)
+    //
+    //  initialize and distribute the particles (that's fine to leave it unoptimized)
+    //
+    double size = set_size(n);
+    if (rank == 0)
     {
-      init_particles( n, particles );
+        init_particles(n, particles);
     }
 
-    buildBins(particle_bins, particles, n);
+    MPI_Bcast(particles, n, PARTICLE, 0, MPI_COMM_WORLD);
+
+#if DEBUG
+    double times[3]; // TODO: Remove this.
+#endif
+
+    // Create a grid for optimizing the interactions
+    int gridSize = (size/cutoff) + 1; // TODO: Rounding errors?
+    grid_init(grid, gridSize);
+    for (int i = 0; i < n; ++i)
+    {
+        grid_add(grid, particles[i]);
+    }
+
+    //
+    //  Set up the data partitioning across processors
+    //
+    int rows_per_proc = (gridSize + n_proc - 1) / n_proc;
+    int *partition_offsets = (int*) malloc((n_proc+1) * sizeof(int));
+    for (int i = 0; i < n_proc+1; i++)
+    {
+        partition_offsets[i] = Min(i * rows_per_proc, gridSize);
+    }
+    int *partition_sizes = (int*) malloc(n_proc * sizeof(int));
+    for (int i = 0; i < n_proc; i++)
+    {
+        partition_sizes[i] = partition_offsets[i+1] - partition_offsets[i];
+    }
+
+    // Define local block
+    int first = partition_offsets[rank];
+    int last = partition_offsets[rank] + Max(0, partition_sizes[rank] - 1);
 
     //
     //  simulate a number of time steps
     //
-    double simulation_time = read_timer( );
-
-    for( int step = 0; step < NSTEPS; step++ )
+    double simulation_time = read_timer();
+    for (int step = 0; step < nsteps; step++)
     {
+        // Make sure all processors are on the same frame
+        MPI_Barrier(MPI_COMM_WORLD);
 
-      MPI_Barrier(MPI_COMM_WORLD);
-      	navg = 0;
-        davg = 0.0;
-      	dmin = 1.0;
+        #if DEBUG
+        double start = read_timer();
+        #endif
 
         //
-        //  compute forces
+        //  compute all forces
         //
-        //for each bin in grid
-        for(int i = 0; i < binNum; ++i)
-        {
-          for(int j = 0; j < binNum; ++j)
-          {
-            //current bin
-            bin_t& vec = particle_bins[i*binNum+j];
-            //for particle in bin, initialize ax and ay to 0
-            for(int k = 0; k < vec.size(); ++k)
-            {
-              vec[k].ax = vec[k].ay = 0;
-            }
-            //check N/S and E/W neighbors
-            for(int dx = max(0, i-1); dx <= min(binNum, i+1); ++dx)
-            {
-              for(int dy = max(0, j-1); dy <= min(binNum, j+1); ++ dy)
-              {
-                //if the bin you're checking for is actually in the grid
-                  bin_t& vectorholder = particle_bins[(i+dx) *binNum + j + dy];
-                  //for every particle in original vector
-                  for(int k = 0; k < vec.size(); ++k)
-                  {
-                    //for every particle in neighboring bin
-                    for(int l = 0; l < vectorholder.size(); ++l)
-                    {
-                      apply_force(vec[k], vectorholder[l], &dmin, &davg, &navg);
-                    }
-                  }
+        int locals[n];
+        int local_size = 0;
+        // Loop over our part of the grid matrix
+        for (int r = first; r <= last; r++)
+            for (int c = 0; c < grid.size; ++c)
+                // Loop over all particles in this cell
+                for(linkedlist_t * current = grid.grid[r * grid.size + c];
+                    current != 0;
+                    current = current->next)
+                {
+                    int i = current->particle_id;
+                    locals[local_size++] = i;
+
+                    particles[i].ax = particles[i].ay = 0;
+                    // Use the grid to traverse neighbours
+                    int gx = grid_coord(particles[i].x);
+                    int gy = grid_coord(particles[i].y);
+
+                    for(int nx = Max(gx - 1, 0); nx <= Min(gx + 1, grid.size-1); nx++)
+                        for(int ny = Max(gy - 1, 0); ny <= Min(gy + 1, grid.size-1); ny++)
+                            for(linkedlist_t * neighbour = grid.grid[nx * grid.size + ny]; neighbour != 0; neighbour = neighbour->next)
+                                apply_force(particles[i], particles[neighbour->particle_id]);
                 }
-              }
-            }
-          }
+
+
+        //
+        //  save current step if necessary (slightly different semantics than in other codes)
+        //
+        if (fsave && (step%savefreq) == 0)
+        {
+            save(fsave, rank, n, particles, locals, local_size, PARTICLE);
         }
 
+        #if DEBUG
+        times[0] += (read_timer() - start);
+        start = read_timer();
+        #endif
 
-
-        //
-        //  move particles
-        //
-        for(int i = 0; i < binNum; ++i)
+        // Clear rows first-1 and last+1
+        if (first > 0)
         {
-          for(int j = 0; j < binNum; ++j)
-          {
-            bin_t& vec = particle_bins[i * binNum + j];
-            int tail = vec.size();
-            int k = 0;
-            for(k; k < tail;)
+            grid_clear_row(grid, first-1);
+        }
+        if (last < grid.size-1)
+        {
+            grid_clear_row(grid, last+1);
+        }
+
+        //
+        //  Move particles
+        //
+        for (int i = 0; i < local_size; ++i)
+        {
+            int id = locals[i];
+            int gc = grid_coord_flat(grid.size, particles[id].x, particles[id].y);
+
+            move(particles[id]);
+
+            int gx = grid_coord(particles[id].x);
+
+            // The particle has moved to a neighbour
+            if (gx < first || gx > last)
             {
-              move(vec[k]);
-              int x = int(vec[k].x / binSize);  //check position of moved particle
-              int y = int(vec[k].y / binSize);  //check y-coordinate of moved particle
-              if( x == i && y == j)
-                ++k;
-              else
-              {
-                temp.push_back(vec[k]);
-                vec[k] = vec[--tail];
-              }
+                // Not our problem anymore.
+                if (! grid_remove(grid, particles[id], gc))
+                {
+                    fprintf(stdout, "Error");
+                    exit(3);
+                    return 3;
+                }
+
+                grid_add(grid, particles[id]);
+
+                // Send it to neighbour
+                int target = (gx < first ? rank-1 : rank+1);
+
+                fflush(stdout);
+                MPI_Request request;
+                MPI_Isend(particles+id, 1, PARTICLE, target, target, MPI_COMM_WORLD, &request);
+                continue;
             }
-            vec.resize(k);
-          }
+            // The particle has moved to a new internal cell
+            if (gc != grid_coord_flat(grid.size, particles[id].x, particles[id].y))
+            {
+                if (! grid_remove(grid, particles[id], gc))
+                {
+                    fprintf(stdout, "Error: Failed to remove particle '%d'. Code must be faulty. Blame source writer.\n", id);
+                    exit(4);
+                    return 4;
+                }
+                grid_add(grid, particles[id]);
+            }
+
         }
+        #if DEBUG
+        times[1] += (read_timer() - start);
+        start = read_timer();
+        #endif
 
+        MPI_Request request;
+        // Send first row
+        if (first > 0)
+            for (int c = 0; c < grid.size; ++c)
+                for(linkedlist_t * current = grid.grid[first * grid.size + c];
+                    current != 0;
+                    current = current->next)
+                    MPI_Isend(particles+current->particle_id, 1, PARTICLE, rank-1, rank-1, MPI_COMM_WORLD, &request);
+        // Send last row
+        if (last < grid.size-1)
+            for (int c = 0; c < grid.size; ++c)
+                for(linkedlist_t * current = grid.grid[(last) * grid.size + c];
+                    current != 0;
+                    current = current->next)
+                    MPI_Isend(particles+current->particle_id, 1, PARTICLE, rank+1, rank+1, MPI_COMM_WORLD, &request);
 
-        //put moved particles into their new bins
-        for(int i = 0; i < temp.size(); ++i)
+        // Tell neighbouring rows that we are done.
+        particle_t end;
+        end.id = -1;
+        if (first > 0)              MPI_Isend(&end, 1, PARTICLE, rank-1, rank, MPI_COMM_WORLD, &request);
+        if (last  < grid.size-1)    MPI_Isend(&end, 1, PARTICLE, rank+1, rank, MPI_COMM_WORLD, &request);
+
+        // Receive new particles from neighbouring threads.
+        particle_t new_particle;
+        int breakcount = 0;
+        int breaklimit = 2;
+        if (first == 0) breaklimit--;
+        if (last == grid.size-1) breaklimit--;
+
+        while(breakcount < breaklimit)
         {
-          int x = int(temp[i].x / binSize);
-          int y = int(temp[i].y / binSize);
-          particle_bins[x*binNum +y].push_back(temp[i]);
+            MPI_Status stat;
+            MPI_Recv(&new_particle, 1, PARTICLE, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &stat);
+
+            if (new_particle.id == -1)
+            {
+                breakcount++;
+                continue;
+            }
+
+            particles[new_particle.id] = new_particle;
+
+            grid_add(grid, particles[new_particle.id]);
         }
-        temp.clear();
 
-
-
-        if( find_option( argc, argv, "-no" ) == -1 )
-        {
-          //
-          // Computing statistical data
-          //
-          if (navg) {
-            absavg +=  davg/navg;
-            nabsavg++;
-          }
-          if (dmin < absmin) absmin = dmin;
-
-          //
-          //  save if necessary
-          //
-          if( fsave )
-              save( fsave, n, particles );
-        }
+        #if DEBUG
+        times[2] += (read_timer() - start);
+        start = read_timer();
+        #endif
     }
-    double simulation_time = read_timer( ) - simulation_time;
+    simulation_time = read_timer() - simulation_time;
 
-    printf( "n = %d, simulation time = %d seconds", n, simulation_time);
+    if (rank == 0)
+        printf("n = %d, n_procs = %d, simulation time = %f seconds\n", n, n_proc, simulation_time);
 
-    if( find_option( argc, argv, "-no" ) == -1 )
+    #if DEBUG
+    double result[5];
+    MPI_Reduce(times, result, 5, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD);
+    if (rank == 0)
     {
-      if (nabsavg) absavg /= nabsavg;
-    //
-    //  -the minimum distance absmin between 2 particles during the run of the simulation
-    //  -A Correct simulation will have particles stay at greater than 0.4 (of cutoff) with typical values between .7-.8
-    //  -A simulation were particles don't interact correctly will be less than 0.4 (of cutoff) with typical values between .01-.05
-    //
-    //  -The average distance absavg is ~.95 when most particles are interacting correctly and ~.66 when no particles are interacting
-    //
-    printf( ", absmin = %lf, absavg = %lf", absmin, absavg);
-    if (absmin < 0.4) printf ("\nThe minimum distance is below 0.4 meaning that some particle is not interacting");
-    if (absavg < 0.8) printf ("\nThe average distance is below 0.8 meaning that most particles are not interacting");
+        printf("Force: %f\n", rank, result[0]/n_proc);
+        printf("Move: %f\n", rank, result[1]/n_proc);
+        printf("Communication: %f\n", rank, result[2]/n_proc);
     }
-    printf("\n");
+    #endif
 
     //
-    // Printing summary data
+    //  Release resources
     //
-    if( fsum)
-        fprintf(fsum,"%d %g\n",n,simulation_time);
-
-    //
-    // Clearing space
-    //
-    if( fsum )
-        fclose( fsum );
-    free( particles );
-    if( fsave )
-        fclose( fsave );
+    free(partition_offsets);
+    free(partition_sizes);
+    free(particles);
+    if (fsave)
+        fclose(fsave);
 
     MPI_Finalize();
+
     return 0;
 }
