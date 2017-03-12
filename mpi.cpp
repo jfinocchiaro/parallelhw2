@@ -4,10 +4,10 @@
 #include <assert.h>
 #include <string.h>
 
-#include "common.h"
-#include "grid.h"
+#include "mpicommon.h"
+#include "mpigrid.h"
 
-#define DEBUG 1
+#define DEBUG 0
 
 //
 //  Benchmarking program
@@ -69,7 +69,7 @@ int main(int argc, char **argv)
     //
     //  initialize and distribute the particles (that's fine to leave it unoptimized)
     //
-    double size = set_size(n);
+    double size = setSize(n);
     if (rank == 0)
     {
         init_particles(n, particles);
@@ -77,9 +77,9 @@ int main(int argc, char **argv)
 
     MPI_Bcast(particles, n, PARTICLE, 0, MPI_COMM_WORLD);
 
-#if DEBUG
-    double times[3]; // TODO: Remove this.
-#endif
+	#if DEBUG
+    	double times[3]; // TODO: Remove this.
+	#endif
 
     // Create a grid for optimizing the interactions
     int gridSize = (size/cutoff) + 1; // TODO: Rounding errors?
@@ -96,7 +96,7 @@ int main(int argc, char **argv)
     int *partition_offsets = (int*) malloc((n_proc+1) * sizeof(int));
     for (int i = 0; i < n_proc+1; i++)
     {
-        partition_offsets[i] = Min(i * rows_per_proc, gridSize);
+        partition_offsets[i] = min(i * rows_per_proc, gridSize);
     }
     int *partition_sizes = (int*) malloc(n_proc * sizeof(int));
     for (int i = 0; i < n_proc; i++)
@@ -106,7 +106,7 @@ int main(int argc, char **argv)
 
     // Define local block
     int first = partition_offsets[rank];
-    int last = partition_offsets[rank] + Max(0, partition_sizes[rank] - 1);
+    int last = partition_offsets[rank] + max(0, partition_sizes[rank] - 1);
 
     //
     //  simulate a number of time steps
@@ -142,10 +142,10 @@ int main(int argc, char **argv)
                     int gx = grid_coord(particles[i].x);
                     int gy = grid_coord(particles[i].y);
 
-                    for(int nx = Max(gx - 1, 0); nx <= Min(gx + 1, grid.size-1); nx++)
-                        for(int ny = Max(gy - 1, 0); ny <= Min(gy + 1, grid.size-1); ny++)
+                    for(int nx = max(gx - 1, 0); nx <= min(gx + 1, grid.size-1); nx++)
+                        for(int ny = max(gy - 1, 0); ny <= min(gy + 1, grid.size-1); ny++)
                             for(linkedlist_t * neighbour = grid.grid[nx * grid.size + ny]; neighbour != 0; neighbour = neighbour->next)
-                                apply_force(particles[i], particles[neighbour->particle_id]);
+                                applyForce(particles[i], particles[neighbour->particle_id]);
                 }
 
 
@@ -154,7 +154,7 @@ int main(int argc, char **argv)
         //
         if (fsave && (step%savefreq) == 0)
         {
-            save(fsave, rank, n, particles, locals, local_size, PARTICLE);
+		//MPIsave(fsave, rank, n, particles, locals, local_size, PARTICLE);
         }
 
         #if DEBUG
@@ -218,10 +218,7 @@ int main(int argc, char **argv)
             }
 
         }
-        #if DEBUG
-        times[1] += (read_timer() - start);
-        start = read_timer();
-        #endif
+       
 
         MPI_Request request;
         // Send first row

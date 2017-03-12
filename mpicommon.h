@@ -1,9 +1,8 @@
-#ifndef __CS267_COMMON_H__
-#define __CS267_COMMON_H__
+#ifndef __CS267_MPICOMMON_H__
+#define __CS267_MPICOMMON_H__
 
-#include <vector>
 #include <stdio.h>
-
+#include <mpi.h>
 
 inline int min( int a, int b ) { return a < b ? a : b; }
 inline int max( int a, int b ) { return a > b ? a : b; }
@@ -19,6 +18,7 @@ const int SAVEFREQ = 100;
 //
 typedef struct
 {
+  int id;
   double x;
   double y;
   double vx;
@@ -27,7 +27,6 @@ typedef struct
   double ay;
 } particle_t;
 
-typedef std::vector<particle_t> bin_t;
 
 //
 //  timing routines
@@ -50,7 +49,7 @@ void move( particle_t &p );
 //
 FILE *open_save( char *filename, int n );
 void save( FILE *f, int n, particle_t *p );
-//void MPIsave(FILE *f, int rank, int n, particle_t *p, int * locals, int local_size, MPI_Datatype PARTICLE);
+void MPIsave(FILE *f, int rank, int n, particle_t *p, int * locals, int local_size, MPI_Datatype PARTICLE);
 
 //
 //  argument processing routines

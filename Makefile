@@ -22,18 +22,18 @@ pthreads: pthreads.o common.o
 	$(CC) -o $@ $(LIBS) -lpthread pthreads.o common.o
 openmp: common.o grid.o openmp.o 
 	$(CC) -o $@ $(OPENMP) openmp.o common.o grid.o $(LIBS)
-mpi: mpi.o common.o
-	$(MPCC) -o $@ $(LIBS) $(MPILIBS) mpi.o common.o
+mpi: mpi.o mpicommon.o
+	$(MPCC) -o $@ $(LIBS) $(MPILIBS) mpi.o mpicommon.o
 
 autograder.o: autograder.cpp common.h
 	$(CC) -c $(CFLAGS) autograder.cpp
 openmp.o: openmp.cpp common.h grid.h
 	$(CC) -c $(OPENMP) $(CLFAGS)  openmp.cpp
 serial.o: serial.cpp common.h 
-	$(CC) -c $(CFLAGS) serial.cpp
+	$(MPCC) -c $(CFLAGS) serial.cpp
 pthreads.o: pthreads.cpp common.h
 	$(CC) -c $(CFLAGS) pthreads.cpp
-mpi.o: mpi.cpp common.h
+mpi.o: mpi.cpp mpicommon.h
 	$(MPCC) -c $(CFLAGS) mpi.cpp
 common.o: common.cpp
 	$(CC) -c $(CFLAGS) common.cpp
