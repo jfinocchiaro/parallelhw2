@@ -6,6 +6,8 @@
 #SBATCH -n 16         
 #SBATCH -p development
 #SBATCH -t 00:10:00     
+#SBATCH --mail-type=END
+#SBATCH --mail-user=22jjf22@gmail.com
 
 rm mpi_sum.txt
 ibrun -n 1 -o 0 ./serial -n 500 -no -s mpi_sum.txt

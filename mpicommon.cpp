@@ -189,7 +189,7 @@ void MPIsave(FILE * f, int rank, int n, particle_t *p, int * locals, int local_s
 		for (int i = 0; i < n_others; ++i)
 		{
 			particle_t new_particle;
-			MPI_Recv(&new_particle, 1, PARTICLE, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_STATUS_IGNORE);
+			MPI_Recv(&new_particle, 1, PARTICLE, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 			p[new_particle.id] = new_particle;
 		}
 		for(int i = 0; i < n; ++i)

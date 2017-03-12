@@ -22,8 +22,8 @@ pthreads: pthreads.o common.o
 	$(CC) -o $@ $(LIBS) -lpthread pthreads.o common.o
 openmp: common.o grid.o openmp.o 
 	$(CC) -o $@ $(OPENMP) openmp.o common.o grid.o $(LIBS)
-mpi: mpi.o mpicommon.o
-	$(MPCC) -o $@ $(LIBS) $(MPILIBS) mpi.o mpicommon.o
+mpi: mpicommon.o mpigrid.o mpi.o
+	$(MPCC) -o $@ $(LIBS) $(MPILIBS) mpi.o mpicommon.o mpigrid.o
 
 autograder.o: autograder.cpp common.h
 	$(CC) -c $(CFLAGS) autograder.cpp
@@ -41,6 +41,8 @@ mpicommon.o:  mpicommon.cpp
 	$(MPCC) -c $(CFLAGS) mpicommon.cpp
 grid.o:	grid.cpp
 	$(CC) -c $(CFLAGS) grid.cpp
+mpigrid.o: mpigrid.cpp
+	$(MPCC) -c $(CFLAGS) mpigrid.cpp
 
 clean:
 	rm -f *.o $(TARGETS) *.stdout *.txt
