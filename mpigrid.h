@@ -1,7 +1,7 @@
-#ifndef __GRID_H_
-#define __GRID_H_
+#ifndef __MPIGRID_H_
+#define __MPIGRID_H_
 
-#include "common.h"
+#include "mpicommon.h"
 #define cutoff 0.01
 #include <math.h>
 

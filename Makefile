@@ -37,6 +37,8 @@ mpi.o: mpi.cpp mpicommon.h
 	$(MPCC) -c $(CFLAGS) mpi.cpp
 common.o: common.cpp
 	$(CC) -c $(CFLAGS) common.cpp
+mpicommon.o:  mpicommon.cpp
+	$(MPCC) -c $(CFLAGS) mpicommon.cpp
 grid.o:	grid.cpp
 	$(CC) -c $(CFLAGS) grid.cpp
 
