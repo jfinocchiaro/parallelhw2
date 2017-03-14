@@ -6,7 +6,7 @@
 #include <math.h>
 #include <time.h>
 #include <sys/time.h>
-#include "common.h"
+#include "mpicommon.h"
 
 double size;
 
@@ -175,6 +175,38 @@ void save( FILE *f, int n, particle_t *p )
         fprintf( f, "%g %g\n", p[i].x, p[i].y );
 }
 
+void MPIsave(FILE * f, int rank, int n, particle_t *p, int * locals, int local_size, MPI_Datatype PARTICLE)
+{
+	if (rank == 0)
+	{
+		static bool first = true;
+		if(first)
+		{
+			fprintf(f, "%d %g\n", n, size);
+			first = false;
+		}
+		int n_others = n - local_size;
+		for (int i = 0; i < n_others; ++i)
+		{
+			particle_t new_particle;
+			MPI_Recv(&new_particle, 1, PARTICLE, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+			p[new_particle.id] = new_particle;
+		}
+		for(int i = 0; i < n; ++i)
+		{
+			fprintf(f, "%g %g \n", p[i].x, p[i].y);
+		}
+	}
+	else
+	{	
+		for(int i = 0; i < local_size; ++i)
+		{
+			MPI_Send(p+locals[i], 1, PARTICLE, 0, rank, MPI_COMM_WORLD);
+		}
+	}
+
+	MPI_Barrier(MPI_COMM_WORLD);
+}
 
 
 

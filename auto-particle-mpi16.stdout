@@ -1,0 +1,86 @@
+rm: cannot remove `mpi_sum.txt': No such file or directory
+TACC: Starting up job 8354914
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Grid Size: 0.5000
+Number of Bins: 26*26
+Bin Size: 0.02
+n = 500, simulation time = 0.112775 seconds
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8354914
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+n = 500, n_procs = 1, simulation time = 0.000000 seconds
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8354914
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+n = 500, n_procs = 2, simulation time = 0.000001 seconds
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8354914
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+n = 500, n_procs = 4, simulation time = 0.000000 seconds
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8354914
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+n = 500, n_procs = 8, simulation time = 0.000000 seconds
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8354914
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+n = 500, n_procs = 16, simulation time = 0.000001 seconds
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8354914
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+n = 1000, n_procs = 2, simulation time = 0.000000 seconds
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8354914
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+n = 2000, n_procs = 4, simulation time = 0.000000 seconds
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8354914
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+n = 4000, n_procs = 8, simulation time = 0.000000 seconds
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8354914
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+n = 8000, n_procs = 16, simulation time = 0.000001 seconds
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8354914
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+
+Strong scaling estimates are :
+ (speedup)
+ (efficiency)    for
+ threads/processors
+
+Average strong scaling efficiency:    -nan 
+
+Weak scaling estimates are :
+ (efficiency)    for
+ threads/processors
+
+Average weak scaling efficiency:    -nan 
+
+
+mpi Grade =    -nan
+
+ 
+TACC: Shutdown complete. Exiting.
