@@ -8,6 +8,7 @@
 #include "mpigrid.h"
 
 #define DEBUG 0
+#define NSTEPS 1000
 
 //
 //  Benchmarking program
@@ -23,7 +24,7 @@ int main(int argc, char **argv)
         printf("-h to see this help\n");
         printf("-n <int> to set the number of particles\n");
         printf("-o <filename> to specify the output file name\n");
-        printf( "-s <int> to set the number of steps in the simulation\n" );
+        printf( "-s <filename> to specify a summary file name\n" );
         printf( "-f <int> to set the frequency of saving particle coordinates (e.g. each ten's step)\n" );
         return 0;
     }
@@ -32,6 +33,7 @@ int main(int argc, char **argv)
     int nsteps = read_int(argc, argv, "-s", NSTEPS);
     int savefreq = read_int(argc, argv, "-f", SAVEFREQ);
     char *savename = read_string(argc, argv, "-o", NULL);
+    char *sumname = read_string( argc, argv, "-s", NULL );
 
     //
     //  Set up MPI
@@ -41,10 +43,10 @@ int main(int argc, char **argv)
     MPI_Comm_size(MPI_COMM_WORLD, &n_proc);
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 
-    //
     //  Allocate generic resources
-    //
     FILE *fsave = savename ? fopen(savename, "w") : NULL;
+    FILE *fsum = sumname && rank == 0 ? fopen ( sumname, "a" ) : NULL;
+
     particle_t * particles = (particle_t*) malloc(n * sizeof(particle_t));
     grid_t grid;
 
@@ -77,9 +79,6 @@ int main(int argc, char **argv)
 
     MPI_Bcast(particles, n, PARTICLE, 0, MPI_COMM_WORLD);
 
-	#if DEBUG
-    	double times[3]; // TODO: Remove this.
-	#endif
 
     // Create a grid for optimizing the interactions
     int gridSize = (size/cutoff) + 1; // TODO: Rounding errors?
@@ -112,7 +111,7 @@ int main(int argc, char **argv)
     //  simulate a number of time steps
     //
     double simulation_time = read_timer();
-    for (int step = 0; step < nsteps; step++)
+    for (int step = 0; step < NSTEPS; step++)
     {
         // Make sure all processors are on the same frame
         MPI_Barrier(MPI_COMM_WORLD);
@@ -218,7 +217,7 @@ int main(int argc, char **argv)
             }
 
         }
-       
+
 
         MPI_Request request;
         // Send first row
