@@ -52,7 +52,6 @@ int main(int argc, char **argv)
 
     //
     // Define particle_t in mpi
-    //
     int si = sizeof(int);
     int sd = sizeof(double);
     int ind = -si;
@@ -116,9 +115,7 @@ int main(int argc, char **argv)
         // Make sure all processors are on the same frame
         MPI_Barrier(MPI_COMM_WORLD);
 
-        #if DEBUG
-        double start = read_timer();
-        #endif
+
 
         //
         //  compute all forces
@@ -156,10 +153,7 @@ int main(int argc, char **argv)
 		//MPIsave(fsave, rank, n, particles, locals, local_size, PARTICLE);
         }
 
-        #if DEBUG
-        times[0] += (read_timer() - start);
-        start = read_timer();
-        #endif
+
 
         // Clear rows first-1 and last+1
         if (first > 0)
@@ -264,10 +258,6 @@ int main(int argc, char **argv)
             grid_add(grid, particles[new_particle.id]);
         }
 
-        #if DEBUG
-        times[2] += (read_timer() - start);
-        start = read_timer();
-        #endif
     }
     simulation_time = read_timer() - simulation_time;
 
