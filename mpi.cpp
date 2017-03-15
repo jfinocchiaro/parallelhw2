@@ -40,7 +40,6 @@ int main(int argc, char **argv)
     MPI_Init(&argc, &argv);
     MPI_Comm_size(MPI_COMM_WORLD, &n_proc);
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
-printf("Initialized MPI");
 
 
     //  Allocate generic resources
@@ -66,7 +65,7 @@ printf("Initialized MPI");
     MPI_Datatype PARTICLE;
     MPI_Type_struct(8, blens, indices, oldtypes, &PARTICLE);
     MPI_Type_commit(&PARTICLE);
-printf("Created MPI particle type.\n");
+
     //
     //  initialize and distribute the particles (that's fine to leave it unoptimized)
     //
@@ -113,7 +112,7 @@ printf("Past MPI Bcast\n");
     {
         // Make sure all processors are on the same frame
         MPI_Barrier(MPI_COMM_WORLD);
-printf("Past MPI Barrier\n");
+printf("Past MPI Barrier and about to compute forces\n");
 
 
         //
@@ -121,6 +120,7 @@ printf("Past MPI Barrier\n");
         //
         int locals[n];
         int local_size = 0;
+
         // Loop over our part of the grid matrix
         for (int r = first; r <= last; r++)
             for (int c = 0; c < grid.size; ++c)
@@ -129,7 +129,7 @@ printf("Past MPI Barrier\n");
                     current != 0;
                     current = current->next)
                 {
-printf("In nested loop %d that computers forces\n",step);
+
                     int i = current->particle_id;
                     locals[local_size++] = i;
 
@@ -142,21 +142,18 @@ printf("In nested loop %d that computers forces\n",step);
                         for(int ny = max(gy - 1, 0); ny <= min(gy + 1, grid.size-1); ny++)
                             for(linkedlist_t * neighbour = grid.grid[nx * grid.size + ny]; neighbour != 0; neighbour = neighbour->next)
                             {
-
 				    applyForce(particles[i], particles[neighbour->particle_id]);
 			    }
-MPI_Request req;
-MPI_Status stat;
-MPI_Wait(&req, &stat);
+
                 }
 
-printf("Finished nested for\n");
+printf("Finished computing forces\n");
         //
         //  save current step if necessary (slightly different semantics than in other codes)
         //
         if (fsave && (step%savefreq) == 0)
         {
-		MPIsave(fsave, rank, n, particles, locals, local_size, PARTICLE)
+		MPIsave(fsave, rank, n, particles, locals, local_size, PARTICLE);
         }
 
 
