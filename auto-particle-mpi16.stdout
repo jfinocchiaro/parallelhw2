@@ -1,69 +1,308 @@
-TACC: Starting up job 8360384
+TACC: Starting up job 8360506
 TACC: Setting up parallel environment for MVAPICH2+mpispawn.
 TACC: Starting parallel tasks...
 Grid Size: 0.5000
 Number of Bins: 26*26
 Bin Size: 0.02
-n = 500, simulation time = 0.110774 seconds
+n = 500, simulation time = 0.110753 seconds
  
 TACC: Shutdown complete. Exiting.
-TACC: Starting up job 8360384
+TACC: Starting up job 8360506
 TACC: Setting up parallel environment for MVAPICH2+mpispawn.
 TACC: Starting parallel tasks...
-n = 500, n_procs = 1, simulation time = 0.000001 seconds
+[c557-201.stampede.tacc.utexas.edu:mpi_rank_0][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][child_handler] MPI process (rank: 0, pid: 99231) terminated with signal 11 -> abort job
+[c557-201.stampede.tacc.utexas.edu:mpirun_rsh][process_mpispawn_connection] mpispawn_0 from node c557-201 aborted: Error while reading a PMI socket (4)
+TACC: MPI job exited with code: 1
  
 TACC: Shutdown complete. Exiting.
-TACC: Starting up job 8360384
+TACC: Starting up job 8360506
 TACC: Setting up parallel environment for MVAPICH2+mpispawn.
 TACC: Starting parallel tasks...
-n = 500, n_procs = 2, simulation time = 0.000000 seconds
+[c557-201.stampede.tacc.utexas.edu:mpi_rank_0][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c557-502.stampede.tacc.utexas.edu:mpi_rank_1][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][child_handler] MPI process (rank: 1, pid: 108962) terminated with signal 11 -> abort job
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][child_handler] MPI process (rank: 0, pid: 99547) terminated with signal 13 -> abort job
+[c557-201.stampede.tacc.utexas.edu:mpirun_rsh][process_mpispawn_connection] mpispawn_1 from node c557-502 aborted: Error while reading a PMI socket (4)
+TACC: MPI job exited with code: 1
  
 TACC: Shutdown complete. Exiting.
-TACC: Starting up job 8360384
+TACC: Starting up job 8360506
 TACC: Setting up parallel environment for MVAPICH2+mpispawn.
 TACC: Starting parallel tasks...
-n = 500, n_procs = 4, simulation time = 0.000000 seconds
+[c557-201.stampede.tacc.utexas.edu:mpi_rank_0][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c557-702.stampede.tacc.utexas.edu:mpi_rank_2][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c557-901.stampede.tacc.utexas.edu:mpi_rank_3][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c557-502.stampede.tacc.utexas.edu:mpi_rank_1][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c557-702.stampede.tacc.utexas.edu:mpispawn_2][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-702.stampede.tacc.utexas.edu:mpispawn_2][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-901.stampede.tacc.utexas.edu:mpispawn_3][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-901.stampede.tacc.utexas.edu:mpispawn_3][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-702.stampede.tacc.utexas.edu:mpispawn_2][child_handler] MPI process (rank: 2, pid: 126616) terminated with signal 11 -> abort job
+[c557-901.stampede.tacc.utexas.edu:mpispawn_3][child_handler] MPI process (rank: 3, pid: 22530) terminated with signal 11 -> abort job
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][child_handler] MPI process (rank: 1, pid: 109076) terminated with signal 11 -> abort job
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][child_handler] MPI process (rank: 0, pid: 99867) terminated with signal 13 -> abort job
+[c557-201.stampede.tacc.utexas.edu:mpirun_rsh][process_mpispawn_connection] mpispawn_3 from node c557-901 aborted: Error while reading a PMI socket (4)
+TACC: MPI job exited with code: 1
  
 TACC: Shutdown complete. Exiting.
-TACC: Starting up job 8360384
+TACC: Starting up job 8360506
 TACC: Setting up parallel environment for MVAPICH2+mpispawn.
 TACC: Starting parallel tasks...
-n = 500, n_procs = 8, simulation time = 0.000000 seconds
+[c557-201.stampede.tacc.utexas.edu:mpi_rank_0][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c558-501.stampede.tacc.utexas.edu:mpi_rank_4][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c557-901.stampede.tacc.utexas.edu:mpi_rank_3][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c558-602.stampede.tacc.utexas.edu:mpi_rank_6][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c558-502.stampede.tacc.utexas.edu:mpi_rank_5][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c557-502.stampede.tacc.utexas.edu:mpi_rank_1][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c557-702.stampede.tacc.utexas.edu:mpi_rank_2][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c558-502.stampede.tacc.utexas.edu:mpispawn_5][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c558-502.stampede.tacc.utexas.edu:mpispawn_5][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-702.stampede.tacc.utexas.edu:mpispawn_2][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-702.stampede.tacc.utexas.edu:mpispawn_2][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c558-602.stampede.tacc.utexas.edu:mpispawn_6][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c558-602.stampede.tacc.utexas.edu:mpispawn_6][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c558-501.stampede.tacc.utexas.edu:mpispawn_4][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c558-501.stampede.tacc.utexas.edu:mpispawn_4][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-901.stampede.tacc.utexas.edu:mpispawn_3][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-901.stampede.tacc.utexas.edu:mpispawn_3][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c558-602.stampede.tacc.utexas.edu:mpispawn_6][child_handler] MPI process (rank: 6, pid: 104531) terminated with signal 11 -> abort job
+[c558-502.stampede.tacc.utexas.edu:mpispawn_5][child_handler] MPI process (rank: 5, pid: 57127) terminated with signal 11 -> abort job
+[c557-702.stampede.tacc.utexas.edu:mpispawn_2][child_handler] MPI process (rank: 2, pid: 126730) terminated with signal 11 -> abort job
+[c558-501.stampede.tacc.utexas.edu:mpispawn_4][child_handler] MPI process (rank: 4, pid: 128426) terminated with signal 11 -> abort job
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][child_handler] MPI process (rank: 1, pid: 109190) terminated with signal 11 -> abort job
+[c557-901.stampede.tacc.utexas.edu:mpispawn_3][child_handler] MPI process (rank: 3, pid: 22644) terminated with signal 11 -> abort job
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][child_handler] MPI process (rank: 0, pid: 100197) terminated with signal 11 -> abort job
+[c557-201.stampede.tacc.utexas.edu:mpirun_rsh][process_mpispawn_connection] mpispawn_5 from node c558-502 aborted: Error while reading a PMI socket (4)
+[c558-902.stampede.tacc.utexas.edu:mpispawn_7][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c558-902.stampede.tacc.utexas.edu:mpispawn_7][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c558-902.stampede.tacc.utexas.edu:mpispawn_7][handle_mt_peer] Error while reading PMI socket. MPI process died?
+TACC: MPI job exited with code: 1
  
 TACC: Shutdown complete. Exiting.
-TACC: Starting up job 8360384
+TACC: Starting up job 8360506
 TACC: Setting up parallel environment for MVAPICH2+mpispawn.
 TACC: Starting parallel tasks...
-n = 500, n_procs = 16, simulation time = 0.000001 seconds
+[c558-902.stampede.tacc.utexas.edu:mpispawn_7][report_error] connect() failed: Connection refused (111)
+[c559-802.stampede.tacc.utexas.edu:mpi_rank_14][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c559-003.stampede.tacc.utexas.edu:mpi_rank_10][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c558-501.stampede.tacc.utexas.edu:mpi_rank_4][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c558-602.stampede.tacc.utexas.edu:mpi_rank_6][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c559-001.stampede.tacc.utexas.edu:mpi_rank_8][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c557-702.stampede.tacc.utexas.edu:mpi_rank_2][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c559-002.stampede.tacc.utexas.edu:mpi_rank_9][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c558-902.stampede.tacc.utexas.edu:mpi_rank_7][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c557-901.stampede.tacc.utexas.edu:mpi_rank_3][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c559-302.stampede.tacc.utexas.edu:mpi_rank_13][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c560-004.stampede.tacc.utexas.edu:mpi_rank_15][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c557-502.stampede.tacc.utexas.edu:mpi_rank_1][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c558-502.stampede.tacc.utexas.edu:mpi_rank_5][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c559-004.stampede.tacc.utexas.edu:mpi_rank_11][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c559-003.stampede.tacc.utexas.edu:mpispawn_10][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c559-003.stampede.tacc.utexas.edu:mpispawn_10][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-802.stampede.tacc.utexas.edu:mpispawn_14][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c559-802.stampede.tacc.utexas.edu:mpispawn_14][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-001.stampede.tacc.utexas.edu:mpispawn_8][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c559-001.stampede.tacc.utexas.edu:mpispawn_8][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-702.stampede.tacc.utexas.edu:mpispawn_2][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-702.stampede.tacc.utexas.edu:mpispawn_2][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c558-602.stampede.tacc.utexas.edu:mpispawn_6][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c558-602.stampede.tacc.utexas.edu:mpispawn_6][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c560-004.stampede.tacc.utexas.edu:mpispawn_15][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c560-004.stampede.tacc.utexas.edu:mpispawn_15][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c558-501.stampede.tacc.utexas.edu:mpispawn_4][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c558-501.stampede.tacc.utexas.edu:mpispawn_4][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-004.stampede.tacc.utexas.edu:mpispawn_11][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c559-004.stampede.tacc.utexas.edu:mpispawn_11][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-002.stampede.tacc.utexas.edu:mpispawn_9][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c559-002.stampede.tacc.utexas.edu:mpispawn_9][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c558-502.stampede.tacc.utexas.edu:mpispawn_5][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c558-502.stampede.tacc.utexas.edu:mpispawn_5][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c558-902.stampede.tacc.utexas.edu:mpispawn_7][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c558-902.stampede.tacc.utexas.edu:mpispawn_7][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-302.stampede.tacc.utexas.edu:mpispawn_13][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c559-302.stampede.tacc.utexas.edu:mpispawn_13][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-901.stampede.tacc.utexas.edu:mpispawn_3][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-901.stampede.tacc.utexas.edu:mpispawn_3][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-003.stampede.tacc.utexas.edu:mpispawn_10][child_handler] MPI process (rank: 10, pid: 78214) terminated with signal 11 -> abort job
+[c557-702.stampede.tacc.utexas.edu:mpispawn_2][child_handler] MPI process (rank: 2, pid: 126844) terminated with signal 11 -> abort job
+[c559-802.stampede.tacc.utexas.edu:mpispawn_14][child_handler] MPI process (rank: 14, pid: 42682) terminated with signal 11 -> abort job
+[c558-602.stampede.tacc.utexas.edu:mpispawn_6][child_handler] MPI process (rank: 6, pid: 104647) terminated with signal 11 -> abort job
+[c559-001.stampede.tacc.utexas.edu:mpispawn_8][child_handler] MPI process (rank: 8, pid: 68291) terminated with signal 11 -> abort job
+[c560-004.stampede.tacc.utexas.edu:mpispawn_15][child_handler] MPI process (rank: 15, pid: 29691) terminated with signal 11 -> abort job
+[c558-501.stampede.tacc.utexas.edu:mpispawn_4][child_handler] MPI process (rank: 4, pid: 128540) terminated with signal 11 -> abort job
+[c559-002.stampede.tacc.utexas.edu:mpispawn_9][child_handler] MPI process (rank: 9, pid: 47916) terminated with signal 11 -> abort job
+[c558-502.stampede.tacc.utexas.edu:mpispawn_5][child_handler] MPI process (rank: 5, pid: 57241) terminated with signal 11 -> abort job
+[c559-004.stampede.tacc.utexas.edu:mpispawn_11][child_handler] MPI process (rank: 11, pid: 102368) terminated with signal 11 -> abort job
+[c557-901.stampede.tacc.utexas.edu:mpispawn_3][child_handler] MPI process (rank: 3, pid: 22758) terminated with signal 11 -> abort job
+[c559-302.stampede.tacc.utexas.edu:mpispawn_13][child_handler] MPI process (rank: 13, pid: 42030) terminated with signal 11 -> abort job
+[c558-902.stampede.tacc.utexas.edu:mpispawn_7][child_handler] MPI process (rank: 7, pid: 124175) terminated with signal 11 -> abort job
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][child_handler] MPI process (rank: 1, pid: 109304) terminated with signal 11 -> abort job
+[c557-201.stampede.tacc.utexas.edu:mpirun_rsh][process_mpispawn_connection] mpispawn_2 from node c557-702 aborted: Error while reading a PMI socket (4)
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][read_size] Unexpected End-Of-File on file descriptor 16. MPI process died?
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][read_size] Unexpected End-Of-File on file descriptor 16. MPI process died?
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][handle_mt_peer] Error while reading PMI socket. MPI process died?
+TACC: MPI job exited with code: 1
  
 TACC: Shutdown complete. Exiting.
-TACC: Starting up job 8360384
+TACC: Starting up job 8360506
 TACC: Setting up parallel environment for MVAPICH2+mpispawn.
 TACC: Starting parallel tasks...
-n = 1000, n_procs = 2, simulation time = 0.000001 seconds
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][report_error] connect() failed: Connection refused (111)
+[c559-301.stampede.tacc.utexas.edu:mpispawn_12][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-301.stampede.tacc.utexas.edu:mpispawn_12][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-301.stampede.tacc.utexas.edu:mpispawn_12][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c559-301.stampede.tacc.utexas.edu:mpispawn_12][report_error] connect() failed: Connection refused (111)
+[c557-201.stampede.tacc.utexas.edu:mpi_rank_0][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c557-502.stampede.tacc.utexas.edu:mpi_rank_1][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][child_handler] MPI process (rank: 1, pid: 109418) terminated with signal 11 -> abort job
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][child_handler] MPI process (rank: 0, pid: 100908) terminated with signal 13 -> abort job
+[c557-201.stampede.tacc.utexas.edu:mpirun_rsh][process_mpispawn_connection] mpispawn_1 from node c557-502 aborted: Error while reading a PMI socket (4)
+TACC: MPI job exited with code: 1
  
 TACC: Shutdown complete. Exiting.
-TACC: Starting up job 8360384
+TACC: Starting up job 8360506
 TACC: Setting up parallel environment for MVAPICH2+mpispawn.
 TACC: Starting parallel tasks...
-n = 2000, n_procs = 4, simulation time = 0.000000 seconds
+ErrorErrorError[c557-201.stampede.tacc.utexas.edu:mpispawn_0][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][child_handler] MPI process (rank: 0, pid: 101228) exited with status 3
+[c557-901.stampede.tacc.utexas.edu:mpispawn_3][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-901.stampede.tacc.utexas.edu:mpispawn_3][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-901.stampede.tacc.utexas.edu:mpispawn_3][child_handler] MPI process (rank: 3, pid: 22872) exited with status 3
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][child_handler] MPI process (rank: 1, pid: 109532) exited with status 3
+TACC: MPI job exited with code: 1
  
 TACC: Shutdown complete. Exiting.
-TACC: Starting up job 8360384
+TACC: Starting up job 8360506
 TACC: Setting up parallel environment for MVAPICH2+mpispawn.
 TACC: Starting parallel tasks...
-n = 4000, n_procs = 8, simulation time = 0.000001 seconds
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][report_error] connect() failed: Connection refused (111)
+[c557-702.stampede.tacc.utexas.edu:mpispawn_2][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c557-702.stampede.tacc.utexas.edu:mpispawn_2][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c557-702.stampede.tacc.utexas.edu:mpispawn_2][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c557-901.stampede.tacc.utexas.edu:mpispawn_3][report_error] connect() failed: Connection refused (111)
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][report_error] connect() failed: Connection refused (111)
+[c557-702.stampede.tacc.utexas.edu:mpispawn_2][report_error] connect() failed: Connection refused (111)
+[c558-902.stampede.tacc.utexas.edu:mpi_rank_7][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c558-502.stampede.tacc.utexas.edu:mpi_rank_5][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c558-501.stampede.tacc.utexas.edu:mpi_rank_4][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c558-902.stampede.tacc.utexas.edu:mpispawn_7][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c558-902.stampede.tacc.utexas.edu:mpispawn_7][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c558-602.stampede.tacc.utexas.edu:mpi_rank_6][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c558-502.stampede.tacc.utexas.edu:mpispawn_5][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c558-502.stampede.tacc.utexas.edu:mpispawn_5][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c558-501.stampede.tacc.utexas.edu:mpispawn_4][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c558-501.stampede.tacc.utexas.edu:mpispawn_4][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c558-602.stampede.tacc.utexas.edu:mpispawn_6][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c558-602.stampede.tacc.utexas.edu:mpispawn_6][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c558-902.stampede.tacc.utexas.edu:mpispawn_7][child_handler] MPI process (rank: 7, pid: 124289) terminated with signal 11 -> abort job
+[c558-502.stampede.tacc.utexas.edu:mpispawn_5][child_handler] MPI process (rank: 5, pid: 57355) terminated with signal 11 -> abort job
+[c558-501.stampede.tacc.utexas.edu:mpispawn_4][child_handler] MPI process (rank: 4, pid: 128654) terminated with signal 11 -> abort job
+[c558-602.stampede.tacc.utexas.edu:mpispawn_6][child_handler] MPI process (rank: 6, pid: 104761) terminated with signal 11 -> abort job
+[c557-201.stampede.tacc.utexas.edu:mpirun_rsh][process_mpispawn_connection] mpispawn_7 from node c558-902 aborted: Error while reading a PMI socket (4)
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][read_size] Unexpected End-Of-File on file descriptor 13. MPI process died?
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][handle_mt_peer] Error while reading PMI socket. MPI process died?
+TACC: MPI job exited with code: 1
  
 TACC: Shutdown complete. Exiting.
-TACC: Starting up job 8360384
+TACC: Starting up job 8360506
 TACC: Setting up parallel environment for MVAPICH2+mpispawn.
 TACC: Starting parallel tasks...
-n = 8000, n_procs = 16, simulation time = 0.000000 seconds
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][report_error] connect() failed: Connection refused (111)
+[c557-901.stampede.tacc.utexas.edu:mpispawn_3][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c557-901.stampede.tacc.utexas.edu:mpispawn_3][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c557-901.stampede.tacc.utexas.edu:mpispawn_3][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c557-702.stampede.tacc.utexas.edu:mpispawn_2][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c557-702.stampede.tacc.utexas.edu:mpispawn_2][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c557-702.stampede.tacc.utexas.edu:mpispawn_2][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][report_error] connect() failed: Connection refused (111)
+[c557-702.stampede.tacc.utexas.edu:mpispawn_2][report_error] connect() failed: Connection refused (111)
+[c557-901.stampede.tacc.utexas.edu:mpispawn_3][report_error] connect() failed: Connection refused (111)
+[c559-004.stampede.tacc.utexas.edu:mpi_rank_11][error_sighandler] Caught error: Segmentation fault (signal 11)
+ErrorErrorErrorErrorErrorError[c559-004.stampede.tacc.utexas.edu:mpispawn_11][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c559-004.stampede.tacc.utexas.edu:mpispawn_11][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-302.stampede.tacc.utexas.edu:mpi_rank_13][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c558-902.stampede.tacc.utexas.edu:mpi_rank_7][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-901.stampede.tacc.utexas.edu:mpi_rank_3][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c559-301.stampede.tacc.utexas.edu:mpi_rank_12][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c558-902.stampede.tacc.utexas.edu:mpispawn_7][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c558-902.stampede.tacc.utexas.edu:mpispawn_7][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-901.stampede.tacc.utexas.edu:mpispawn_3][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-901.stampede.tacc.utexas.edu:mpispawn_3][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-004.stampede.tacc.utexas.edu:mpispawn_11][child_handler] MPI process (rank: 11, pid: 102482) terminated with signal 11 -> abort job
+[c559-302.stampede.tacc.utexas.edu:mpispawn_13][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c559-302.stampede.tacc.utexas.edu:mpispawn_13][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-301.stampede.tacc.utexas.edu:mpispawn_12][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c559-301.stampede.tacc.utexas.edu:mpispawn_12][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][child_handler] MPI process (rank: 1, pid: 109760) exited with status 3
+[c558-902.stampede.tacc.utexas.edu:mpispawn_7][child_handler] MPI process (rank: 7, pid: 124403) terminated with signal 11 -> abort job
+[c557-901.stampede.tacc.utexas.edu:mpispawn_3][child_handler] MPI process (rank: 3, pid: 23100) terminated with signal 11 -> abort job
+[c559-302.stampede.tacc.utexas.edu:mpispawn_13][child_handler] MPI process (rank: 13, pid: 42144) terminated with signal 11 -> abort job
+[c559-301.stampede.tacc.utexas.edu:mpispawn_12][child_handler] MPI process (rank: 12, pid: 32984) terminated with signal 11 -> abort job
+[c558-501.stampede.tacc.utexas.edu:mpispawn_4][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c558-501.stampede.tacc.utexas.edu:mpispawn_4][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-002.stampede.tacc.utexas.edu:mpispawn_9][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c559-002.stampede.tacc.utexas.edu:mpispawn_9][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-001.stampede.tacc.utexas.edu:mpispawn_8][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c559-001.stampede.tacc.utexas.edu:mpispawn_8][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c558-501.stampede.tacc.utexas.edu:mpispawn_4][child_handler] MPI process (rank: 4, pid: 128768) exited with status 3
+[c557-702.stampede.tacc.utexas.edu:mpispawn_2][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c557-702.stampede.tacc.utexas.edu:mpispawn_2][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-802.stampede.tacc.utexas.edu:mpispawn_14][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c559-802.stampede.tacc.utexas.edu:mpispawn_14][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-002.stampede.tacc.utexas.edu:mpispawn_9][child_handler] MPI process (rank: 9, pid: 48030) exited with status 3
+[c559-001.stampede.tacc.utexas.edu:mpispawn_8][child_handler] MPI process (rank: 8, pid: 68405) exited with status 3
+[c557-702.stampede.tacc.utexas.edu:mpispawn_2][child_handler] MPI process (rank: 2, pid: 127186) exited with status 3
+[c559-802.stampede.tacc.utexas.edu:mpispawn_14][child_handler] MPI process (rank: 14, pid: 42798) exited with status 3
+TACC: MPI job exited with code: 1
  
 TACC: Shutdown complete. Exiting.
-TACC: Starting up job 8360384
+TACC: Starting up job 8360506
 TACC: Setting up parallel environment for MVAPICH2+mpispawn.
 TACC: Starting parallel tasks...
+[c559-004.stampede.tacc.utexas.edu:mpispawn_11][report_error] connect() failed: Connection refused (111)
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][read_size] Unexpected End-Of-File on file descriptor 17. MPI process died?
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][read_size] Unexpected End-Of-File on file descriptor 17. MPI process died?
+[c557-201.stampede.tacc.utexas.edu:mpispawn_0][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c557-502.stampede.tacc.utexas.edu:mpispawn_1][report_error] connect() failed: Connection refused (111)
+[c557-901.stampede.tacc.utexas.edu:mpispawn_3][report_error] connect() failed: Connection refused (111)
+[c559-302.stampede.tacc.utexas.edu:mpispawn_13][report_error] connect() failed: Connection refused (111)
+[c558-902.stampede.tacc.utexas.edu:mpispawn_7][report_error] connect() failed: Connection refused (111)
+[c559-301.stampede.tacc.utexas.edu:mpispawn_12][report_error] connect() failed: Connection refused (111)
+[c558-501.stampede.tacc.utexas.edu:mpispawn_4][report_error] connect() failed: Connection refused (111)
+[c559-002.stampede.tacc.utexas.edu:mpispawn_9][report_error] connect() failed: Connection refused (111)
+[c559-001.stampede.tacc.utexas.edu:mpispawn_8][report_error] connect() failed: Connection refused (111)
+[c557-702.stampede.tacc.utexas.edu:mpispawn_2][report_error] connect() failed: Connection refused (111)
+[c559-802.stampede.tacc.utexas.edu:mpispawn_14][report_error] connect() failed: Connection refused (111)
 
 Strong scaling estimates are :
  (speedup)

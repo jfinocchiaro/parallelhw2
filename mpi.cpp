@@ -10,9 +10,7 @@
 #define DEBUG 0
 #define NSTEPS 1000
 
-//
 //  Benchmarking program
-//
 int main(int argc, char **argv)
 {
     //
@@ -33,7 +31,7 @@ int main(int argc, char **argv)
     int nsteps = read_int(argc, argv, "-s", NSTEPS);
     int savefreq = read_int(argc, argv, "-f", SAVEFREQ);
     char *savename = read_string(argc, argv, "-o", NULL);
-    char *sumname = read_string( argc, argv, "-s", NULL );
+    //char *sumname = read_string( argc, argv, "-s", NULL );
 
     //
     //  Set up MPI
@@ -45,7 +43,7 @@ int main(int argc, char **argv)
 
     //  Allocate generic resources
     FILE *fsave = savename ? fopen(savename, "w") : NULL;
-    FILE *fsum = sumname && rank == 0 ? fopen ( sumname, "a" ) : NULL;
+    //FILE *fsum = sumname && rank == 0 ? fopen ( sumname, "a" ) : NULL;
 
     particle_t * particles = (particle_t*) malloc(n * sizeof(particle_t));
     grid_t grid;
