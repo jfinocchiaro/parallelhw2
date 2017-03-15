@@ -106,7 +106,7 @@ printf("Past MPI Bcast\n");
     int first = partition_offsets[rank];
     int last = partition_offsets[rank] + max(0, partition_sizes[rank] - 1);
 
-    //
+    
     //  simulate a number of time steps
     double simulation_time = read_timer();
     for (int step = 0; step < NSTEPS; step++)
@@ -142,9 +142,12 @@ printf("In nested loop %d that computers forces\n",step);
                         for(int ny = max(gy - 1, 0); ny <= min(gy + 1, grid.size-1); ny++)
                             for(linkedlist_t * neighbour = grid.grid[nx * grid.size + ny]; neighbour != 0; neighbour = neighbour->next)
                             {
-printf("About to apply force take %d \n", step);
+
 				    applyForce(particles[i], particles[neighbour->particle_id]);
 			    }
+MPI_Request req;
+MPI_Status stat;
+MPI_Wait(&req, &stat);
                 }
 
 printf("Finished nested for\n");
@@ -153,8 +156,7 @@ printf("Finished nested for\n");
         //
         if (fsave && (step%savefreq) == 0)
         {
-		MPIsave(fsave, rank, n, particles, locals, local_size, PARTICLE);
-printf("MPI Save for file");
+		MPIsave(fsave, rank, n, particles, locals, local_size, PARTICLE)
         }
 
 

@@ -1,12 +1,3990 @@
-TACC: Starting up job 8361423
+TACC: Starting up job 8361430
 TACC: Setting up parallel environment for MVAPICH2+mpispawn.
 TACC: Starting parallel tasks...
 Grid Size: 0.5000
 Number of Bins: 26*26
 Bin Size: 0.02
-n = 500, simulation time = 0.110811 seconds
+n = 500, simulation time = 0.110769 seconds
  
 TACC: Shutdown complete. Exiting.
-TACC: Starting up job 8361423
+TACC: Starting up job 8361430
 TACC: Setting up parallel environment for MVAPICH2+mpispawn.
 TACC: Starting parallel tasks...
+Initialized MPICreated MPI particle type.
+Past MPI Bcast
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+[c559-401.stampede.tacc.utexas.edu:mpi_rank_0][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c559-401.stampede.tacc.utexas.edu:mpispawn_0][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c559-401.stampede.tacc.utexas.edu:mpispawn_0][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-401.stampede.tacc.utexas.edu:mpispawn_0][child_handler] MPI process (rank: 0, pid: 76366) terminated with signal 11 -> abort job
+[c559-401.stampede.tacc.utexas.edu:mpirun_rsh][process_mpispawn_connection] mpispawn_0 from node c559-401 aborted: Error while reading a PMI socket (4)
+TACC: MPI job exited with code: 1
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8361430
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Past MPI Bcast
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+Past MPI Bcast
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+[c559-402.stampede.tacc.utexas.edu:mpi_rank_1][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c559-402.stampede.tacc.utexas.edu:mpispawn_1][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c559-402.stampede.tacc.utexas.edu:mpispawn_1][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-402.stampede.tacc.utexas.edu:mpispawn_1][child_handler] MPI process (rank: 1, pid: 76591) terminated with signal 11 -> abort job
+[c559-401.stampede.tacc.utexas.edu:mpirun_rsh][process_mpispawn_connection] mpispawn_1 from node c559-402 aborted: Error while reading a PMI socket (4)
+[c559-401.stampede.tacc.utexas.edu:mpispawn_0][read_size] Unexpected End-Of-File on file descriptor 7. MPI process died?
+[c559-401.stampede.tacc.utexas.edu:mpispawn_0][read_size] Unexpected End-Of-File on file descriptor 7. MPI process died?
+[c559-401.stampede.tacc.utexas.edu:mpispawn_0][handle_mt_peer] Error while reading PMI socket. MPI process died?
+TACC: MPI job exited with code: 1
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8361430
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Past MPI Bcast
+Past MPI Bcast
+Past MPI Bcast
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+Past MPI Bcast
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+In nested loop 0 that computers forces
+[c559-401.stampede.tacc.utexas.edu:mpi_rank_0][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c559-401.stampede.tacc.utexas.edu:mpispawn_0][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c559-401.stampede.tacc.utexas.edu:mpispawn_0][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-401.stampede.tacc.utexas.edu:mpispawn_0][child_handler] MPI process (rank: 0, pid: 77001) terminated with signal 11 -> abort job
+[c559-401.stampede.tacc.utexas.edu:mpirun_rsh][process_mpispawn_connection] mpispawn_0 from node c559-401 aborted: Error while reading a PMI socket (4)
+[c559-404.stampede.tacc.utexas.edu:mpispawn_3][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-404.stampede.tacc.utexas.edu:mpispawn_3][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-404.stampede.tacc.utexas.edu:mpispawn_3][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c559-402.stampede.tacc.utexas.edu:mpispawn_1][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-402.stampede.tacc.utexas.edu:mpispawn_1][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-402.stampede.tacc.utexas.edu:mpispawn_1][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c559-403.stampede.tacc.utexas.edu:mpispawn_2][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-403.stampede.tacc.utexas.edu:mpispawn_2][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-403.stampede.tacc.utexas.edu:mpispawn_2][handle_mt_peer] Error while reading PMI socket. MPI process died?
+TACC: MPI job exited with code: 1
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8361430
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+[c559-403.stampede.tacc.utexas.edu:mpispawn_2][report_error] connect() failed: Connection refused (111)
+[c559-402.stampede.tacc.utexas.edu:mpispawn_1][report_error] connect() failed: Connection refused (111)
+[c559-404.stampede.tacc.utexas.edu:mpispawn_3][report_error] connect() failed: Connection refused (111)
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Past MPI Bcast
+Past MPI Bcast
+Past MPI Bcast
+Past MPI Bcast
+Past MPI Bcast
+Past MPI Barrier
+In nested loop 0 that computers forces
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+Past MPI Bcast
+Past MPI Barrier
+In nested loop 0 that computers forces
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+Past MPI Barrier
+Finished nested for
+About to move particlesMoved particles
+[c559-401.stampede.tacc.utexas.edu:mpi_rank_0][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c559-403.stampede.tacc.utexas.edu:mpi_rank_2][error_sighandler] Caught error: Segmentation fault (signal 11)
+Past MPI Bcast
+Past MPI Bcast
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+[c559-403.stampede.tacc.utexas.edu:mpispawn_2][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c559-403.stampede.tacc.utexas.edu:mpispawn_2][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-403.stampede.tacc.utexas.edu:mpispawn_2][child_handler] MPI process (rank: 2, pid: 117721) terminated with signal 11 -> abort job
+[c559-401.stampede.tacc.utexas.edu:mpispawn_0][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c559-401.stampede.tacc.utexas.edu:mpispawn_0][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-401.stampede.tacc.utexas.edu:mpispawn_0][child_handler] MPI process (rank: 0, pid: 77331) terminated with signal 13 -> abort job
+[c559-401.stampede.tacc.utexas.edu:mpirun_rsh][process_mpispawn_connection] mpispawn_2 from node c559-403 aborted: Error while reading a PMI socket (4)
+[c559-404.stampede.tacc.utexas.edu:mpispawn_3][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-404.stampede.tacc.utexas.edu:mpispawn_3][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-404.stampede.tacc.utexas.edu:mpispawn_3][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c559-502.stampede.tacc.utexas.edu:mpispawn_5][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-502.stampede.tacc.utexas.edu:mpispawn_5][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-502.stampede.tacc.utexas.edu:mpispawn_5][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c559-402.stampede.tacc.utexas.edu:mpispawn_1][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-402.stampede.tacc.utexas.edu:mpispawn_1][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-402.stampede.tacc.utexas.edu:mpispawn_1][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c559-503.stampede.tacc.utexas.edu:mpispawn_6][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-503.stampede.tacc.utexas.edu:mpispawn_6][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-503.stampede.tacc.utexas.edu:mpispawn_6][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c559-501.stampede.tacc.utexas.edu:mpispawn_4][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-501.stampede.tacc.utexas.edu:mpispawn_4][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-501.stampede.tacc.utexas.edu:mpispawn_4][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c559-504.stampede.tacc.utexas.edu:mpispawn_7][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-504.stampede.tacc.utexas.edu:mpispawn_7][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-504.stampede.tacc.utexas.edu:mpispawn_7][handle_mt_peer] Error while reading PMI socket. MPI process died?
+TACC: MPI job exited with code: 1
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8361430
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+[c559-402.stampede.tacc.utexas.edu:mpispawn_1][report_error] connect() failed: Connection refused (111)
+[c559-502.stampede.tacc.utexas.edu:mpispawn_5][report_error] connect() failed: Connection refused (111)
+[c559-503.stampede.tacc.utexas.edu:mpispawn_6][report_error] connect() failed: Connection refused (111)
+[c559-501.stampede.tacc.utexas.edu:mpispawn_4][report_error] connect() failed: Connection refused (111)
+[c559-404.stampede.tacc.utexas.edu:mpispawn_3][report_error] connect() failed: Connection refused (111)
+[c559-504.stampede.tacc.utexas.edu:mpispawn_7][report_error] connect() failed: Connection refused (111)
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Past MPI Bcast
+Past MPI Bcast
+Past MPI Bcast
+Past MPI Bcast
+Past MPI Bcast
+Past MPI Bcast
+Past MPI Bcast
+Past MPI Bcast
+Past MPI Bcast
+Past MPI Bcast
+Past MPI Bcast
+Past MPI Bcast
+Past MPI Barrier
+In nested loop 0 that computers forces
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+Past MPI Barrier
+In nested loop 0 that computers forces
+Past MPI Barrier
+In nested loop 0 that computers forces
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+[c559-703.stampede.tacc.utexas.edu:mpi_rank_14][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c559-704.stampede.tacc.utexas.edu:mpi_rank_15][error_sighandler] Caught error: Segmentation fault (signal 11)
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+Past MPI Bcast
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+Past MPI Barrier
+In nested loop 0 that computers forces
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+Past MPI Bcast
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+Past MPI Bcast
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+Past MPI Bcast
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+Past MPI Barrier
+Finished nested for
+About to move particlesMoved particles
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+[c559-702.stampede.tacc.utexas.edu:mpi_rank_13][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c559-704.stampede.tacc.utexas.edu:mpispawn_15][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c559-704.stampede.tacc.utexas.edu:mpispawn_15][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-702.stampede.tacc.utexas.edu:mpispawn_13][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c559-702.stampede.tacc.utexas.edu:mpispawn_13][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-703.stampede.tacc.utexas.edu:mpispawn_14][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c559-703.stampede.tacc.utexas.edu:mpispawn_14][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-702.stampede.tacc.utexas.edu:mpispawn_13][child_handler] MPI process (rank: 13, pid: 56591) terminated with signal 11 -> abort job
+[c559-703.stampede.tacc.utexas.edu:mpispawn_14][child_handler] MPI process (rank: 14, pid: 60922) terminated with signal 11 -> abort job
+[c559-704.stampede.tacc.utexas.edu:mpispawn_15][child_handler] MPI process (rank: 15, pid: 29231) terminated with signal 11 -> abort job
+[c559-401.stampede.tacc.utexas.edu:mpirun_rsh][process_mpispawn_connection] mpispawn_13 from node c559-702 aborted: Error while reading a PMI socket (4)
+[c559-401.stampede.tacc.utexas.edu:mpispawn_0][read_size] Unexpected End-Of-File on file descriptor 21. MPI process died?
+[c559-401.stampede.tacc.utexas.edu:mpispawn_0][read_size] Unexpected End-Of-File on file descriptor 21. MPI process died?
+[c559-401.stampede.tacc.utexas.edu:mpispawn_0][handle_mt_peer] Error while reading PMI socket. MPI process died?
+TACC: MPI job exited with code: 1
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8361430
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+[c559-401.stampede.tacc.utexas.edu:mpispawn_0][report_error] connect() failed: Connection refused (111)
+[c559-503.stampede.tacc.utexas.edu:mpispawn_6][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-503.stampede.tacc.utexas.edu:mpispawn_6][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-503.stampede.tacc.utexas.edu:mpispawn_6][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c559-602.stampede.tacc.utexas.edu:mpispawn_9][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-602.stampede.tacc.utexas.edu:mpispawn_9][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-602.stampede.tacc.utexas.edu:mpispawn_9][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c559-404.stampede.tacc.utexas.edu:mpispawn_3][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-404.stampede.tacc.utexas.edu:mpispawn_3][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-404.stampede.tacc.utexas.edu:mpispawn_3][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c559-502.stampede.tacc.utexas.edu:mpispawn_5][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-502.stampede.tacc.utexas.edu:mpispawn_5][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-502.stampede.tacc.utexas.edu:mpispawn_5][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c559-504.stampede.tacc.utexas.edu:mpispawn_7][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-504.stampede.tacc.utexas.edu:mpispawn_7][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-504.stampede.tacc.utexas.edu:mpispawn_7][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c559-403.stampede.tacc.utexas.edu:mpispawn_2][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-403.stampede.tacc.utexas.edu:mpispawn_2][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-403.stampede.tacc.utexas.edu:mpispawn_2][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c559-402.stampede.tacc.utexas.edu:mpispawn_1][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-402.stampede.tacc.utexas.edu:mpispawn_1][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-402.stampede.tacc.utexas.edu:mpispawn_1][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c559-701.stampede.tacc.utexas.edu:mpispawn_12][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-701.stampede.tacc.utexas.edu:mpispawn_12][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-701.stampede.tacc.utexas.edu:mpispawn_12][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c559-601.stampede.tacc.utexas.edu:mpispawn_8][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-601.stampede.tacc.utexas.edu:mpispawn_8][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-601.stampede.tacc.utexas.edu:mpispawn_8][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c559-603.stampede.tacc.utexas.edu:mpispawn_10][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-603.stampede.tacc.utexas.edu:mpispawn_10][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-603.stampede.tacc.utexas.edu:mpispawn_10][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c559-501.stampede.tacc.utexas.edu:mpispawn_4][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-501.stampede.tacc.utexas.edu:mpispawn_4][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-501.stampede.tacc.utexas.edu:mpispawn_4][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c559-604.stampede.tacc.utexas.edu:mpispawn_11][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-604.stampede.tacc.utexas.edu:mpispawn_11][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-604.stampede.tacc.utexas.edu:mpispawn_11][handle_mt_peer] Error while reading PMI socket. MPI process died?
+[c559-504.stampede.tacc.utexas.edu:mpispawn_7][report_error] connect() failed: Connection refused (111)
+[c559-701.stampede.tacc.utexas.edu:mpispawn_12][report_error] connect() failed: Connection refused (111)
+[c559-503.stampede.tacc.utexas.edu:mpispawn_6][report_error] connect() failed: Connection refused (111)
+[c559-601.stampede.tacc.utexas.edu:mpispawn_8][report_error] connect() failed: Connection refused (111)
+[c559-604.stampede.tacc.utexas.edu:mpispawn_11][report_error] connect() failed: Connection refused (111)
+[c559-404.stampede.tacc.utexas.edu:mpispawn_3][report_error] connect() failed: Connection refused (111)
+[c559-403.stampede.tacc.utexas.edu:mpispawn_2][report_error] connect() failed: Connection refused (111)
+[c559-402.stampede.tacc.utexas.edu:mpispawn_1][report_error] connect() failed: Connection refused (111)
+[c559-602.stampede.tacc.utexas.edu:mpispawn_9][report_error] connect() failed: Connection refused (111)
+[c559-502.stampede.tacc.utexas.edu:mpispawn_5][report_error] connect() failed: Connection refused (111)
+[c559-603.stampede.tacc.utexas.edu:mpispawn_10][report_error] connect() failed: Connection refused (111)
+[c559-501.stampede.tacc.utexas.edu:mpispawn_4][report_error] connect() failed: Connection refused (111)
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Past MPI Bcast
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+Past MPI Bcast
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+[c559-401.stampede.tacc.utexas.edu:mpi_rank_0][error_sighandler] Caught error: Segmentation fault (signal 11)
+[c559-401.stampede.tacc.utexas.edu:mpispawn_0][readline] Unexpected End-Of-File on file descriptor 5. MPI process died?
+[c559-401.stampede.tacc.utexas.edu:mpispawn_0][mtpmi_processops] Error while reading PMI socket. MPI process died?
+[c559-401.stampede.tacc.utexas.edu:mpispawn_0][child_handler] MPI process (rank: 0, pid: 78042) terminated with signal 11 -> abort job
+[c559-401.stampede.tacc.utexas.edu:mpirun_rsh][process_mpispawn_connection] mpispawn_0 from node c559-401 aborted: Error while reading a PMI socket (4)
+[c559-402.stampede.tacc.utexas.edu:mpispawn_1][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-402.stampede.tacc.utexas.edu:mpispawn_1][read_size] Unexpected End-Of-File on file descriptor 6. MPI process died?
+[c559-402.stampede.tacc.utexas.edu:mpispawn_1][handle_mt_peer] Error while reading PMI socket. MPI process died?
+TACC: MPI job exited with code: 1
+ 
+TACC: Shutdown complete. Exiting.
+TACC: Starting up job 8361430
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+[c559-402.stampede.tacc.utexas.edu:mpispawn_1][report_error] connect() failed: Connection refused (111)
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Initialized MPICreated MPI particle type.
+Past MPI Bcast
+Past MPI Bcast
+Initialized MPICreated MPI particle type.
+Past MPI Bcast
+Past MPI Barrier
+Past MPI Bcast
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+Past MPI Barrier
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+Finished nested for
+About to move particlesMoved particles
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+In nested loop 0 that computers forces
+About to apply force take 0 
+slurmstepd: *** JOB 8361430 ON c559-401 CANCELLED AT 2017-03-15T08:38:35 DUE TO TIME LIMIT ***
+[c559-401.stampede.tacc.utexas.edu:mpirun_rsh][signal_processor] Caught signal 15, killing job
