@@ -78,7 +78,7 @@ int main(int argc, char **argv)
 
 
     // Create a grid for optimizing the interactions
-    int gridSize = (size/cutoff) + 1; // TODO: Rounding errors?
+    int gridSize = (size/cutoff) + 1;
     grid_init(grid, gridSize);
     for (int i = 0; i < n; ++i)
     {
@@ -148,7 +148,7 @@ int main(int argc, char **argv)
         //
         if (fsave && (step%savefreq) == 0)
         {
-		//MPIsave(fsave, rank, n, particles, locals, local_size, PARTICLE);
+		MPIsave(fsave, rank, n, particles, locals, local_size, PARTICLE);
         }
 
 
