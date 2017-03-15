@@ -40,6 +40,8 @@ int main(int argc, char **argv)
     MPI_Init(&argc, &argv);
     MPI_Comm_size(MPI_COMM_WORLD, &n_proc);
     MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+printf("Initialized MPI");
+
 
     //  Allocate generic resources
     FILE *fsave = savename ? fopen(savename, "w") : NULL;
@@ -64,7 +66,7 @@ int main(int argc, char **argv)
     MPI_Datatype PARTICLE;
     MPI_Type_struct(8, blens, indices, oldtypes, &PARTICLE);
     MPI_Type_commit(&PARTICLE);
-
+printf("Created MPI particle type.\n");
     //
     //  initialize and distribute the particles (that's fine to leave it unoptimized)
     //
@@ -75,7 +77,7 @@ int main(int argc, char **argv)
     }
 
     MPI_Bcast(particles, n, PARTICLE, 0, MPI_COMM_WORLD);
-
+printf("Past MPI Bcast\n");
 
     // Create a grid for optimizing the interactions
     int gridSize = (size/cutoff) + 1;
@@ -106,13 +108,12 @@ int main(int argc, char **argv)
 
     //
     //  simulate a number of time steps
-    //
     double simulation_time = read_timer();
     for (int step = 0; step < NSTEPS; step++)
     {
         // Make sure all processors are on the same frame
         MPI_Barrier(MPI_COMM_WORLD);
-
+printf("Past MPI Barrier\n");
 
 
         //
@@ -128,6 +129,7 @@ int main(int argc, char **argv)
                     current != 0;
                     current = current->next)
                 {
+printf("In nested loop %d that computers forces\n",step);
                     int i = current->particle_id;
                     locals[local_size++] = i;
 
@@ -139,16 +141,20 @@ int main(int argc, char **argv)
                     for(int nx = max(gx - 1, 0); nx <= min(gx + 1, grid.size-1); nx++)
                         for(int ny = max(gy - 1, 0); ny <= min(gy + 1, grid.size-1); ny++)
                             for(linkedlist_t * neighbour = grid.grid[nx * grid.size + ny]; neighbour != 0; neighbour = neighbour->next)
-                                applyForce(particles[i], particles[neighbour->particle_id]);
+                            {
+printf("About to apply force take %d \n", step);
+				    applyForce(particles[i], particles[neighbour->particle_id]);
+			    }
                 }
 
-
+printf("Finished nested for\n");
         //
         //  save current step if necessary (slightly different semantics than in other codes)
         //
         if (fsave && (step%savefreq) == 0)
         {
 		MPIsave(fsave, rank, n, particles, locals, local_size, PARTICLE);
+printf("MPI Save for file");
         }
 
 
@@ -163,6 +169,7 @@ int main(int argc, char **argv)
             grid_clear_row(grid, last+1);
         }
 
+printf("About to move particles");
         //
         //  Move particles
         //
@@ -209,7 +216,7 @@ int main(int argc, char **argv)
             }
 
         }
-
+printf("Moved particles\n");
 
         MPI_Request request;
         // Send first row
