@@ -51,24 +51,13 @@ int main(int argc, char **argv)
 
     //
     // Define particle_t in mpi
-    int si = sizeof(int);
-    int sd = sizeof(double);
-    int ind = -si;
-    int blens[] = {1, 1, 1, 1, 1, 1, 1, 1};
-    MPI_Aint indices[] = {ind += si,
-                          ind += sd, ind += sd, ind += sd,
-                          ind += sd, ind += sd, ind += sd, sizeof(particle_t)};
-    MPI_Datatype oldtypes[] = { MPI_INTEGER,
-                                MPI_DOUBLE, MPI_DOUBLE, MPI_DOUBLE,
-                                MPI_DOUBLE, MPI_DOUBLE, MPI_DOUBLE, MPI_UB  };
-
     MPI_Datatype PARTICLE;
-    MPI_Type_struct(8, blens, indices, oldtypes, &PARTICLE);
+    MPI_Type_contiguous(6, MPI_DOUBLE, &PARTICLE);
     MPI_Type_commit(&PARTICLE);
+    
 
-    //
+
     //  initialize and distribute the particles (that's fine to leave it unoptimized)
-    //
     double size = setSize(n);
     if (rank == 0)
     {
