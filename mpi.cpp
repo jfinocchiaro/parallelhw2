@@ -32,6 +32,10 @@ int main(int argc, char **argv)
     int savefreq = read_int(argc, argv, "-f", SAVEFREQ);
     char *savename = read_string(argc, argv, "-o", NULL);
     //char *sumname = read_string( argc, argv, "-s", NULL );
+    
+    int navg, nabsavg = 0;
+    double dmin, absmin = 1.0, davg, absavg=0.0;
+    double rdavg, rdmin;
 
     //
     //  Set up MPI
@@ -99,9 +103,12 @@ printf("Past MPI Bcast\n");
     double simulation_time = read_timer();
     for (int step = 0; step < NSTEPS; step++)
     {
+	navg = 0;
+	dmin = 1.0;
+	davg = 0.0;
         // Make sure all processors are on the same frame
         MPI_Barrier(MPI_COMM_WORLD);
-printf("Past MPI Barrier and about to compute forces\n");
+
 
 
         //
@@ -118,7 +125,7 @@ printf("Past MPI Barrier and about to compute forces\n");
                     current != 0;
                     current = current->next)
                 {
-
+printf("In for loop for the %dth time\n", step);
                     int i = current->particle_id;
                     locals[local_size++] = i;
 
@@ -126,12 +133,16 @@ printf("Past MPI Barrier and about to compute forces\n");
                     // Use the grid to traverse neighbours
                     int gx = grid_coord(particles[i].x);
                     int gy = grid_coord(particles[i].y);
-
+printf("Traversed neighbors\n");
                     for(int nx = max(gx - 1, 0); nx <= min(gx + 1, grid.size-1); nx++)
                         for(int ny = max(gy - 1, 0); ny <= min(gy + 1, grid.size-1); ny++)
                             for(linkedlist_t * neighbour = grid.grid[nx * grid.size + ny]; neighbour != 0; neighbour = neighbour->next)
                             {
-				    applyForce(particles[i], particles[neighbour->particle_id]);
+printf("About to apply force\n");
+printf("Particle ID:  %d", neighbour->particle_id);
+printf("grid location: %d", &grid);
+				    apply_force(particles[i], particles[neighbour->particle_id], &dmin, &davg, &navg);
+printf("Applied force\n");
 			    }
 
                 }

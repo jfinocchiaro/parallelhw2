@@ -91,23 +91,27 @@ void init_particles( int n, particle_t *p )
 //
 void apply_force( particle_t &particle, particle_t &neighbor , double *dmin, double *davg, int *navg)
 {
-
+printf("Entered function\n");
+printf("Neighbor:  %d\n", &neighbor);
+printf("Particle:  %d\n", &particle);
     double dx = neighbor.x - particle.x;
     double dy = neighbor.y - particle.y;
     double r2 = dx * dx + dy * dy;
+printf("Did some shit\n");
     if( r2 > cutoff*cutoff )
         return;
 	  if (r2 != 0)
         {
+printf("Entered if r2 != 0\n");
 	          if (r2/(cutoff*cutoff) < *dmin * (*dmin))
 	              *dmin = sqrt(r2)/cutoff;
            (*davg) += sqrt(r2)/cutoff;
            (*navg) ++;
         }
-
+printf("Exited if statement r2 != 0\n");
     r2 = fmax( r2, min_r*min_r );
     double r = sqrt( r2 );
-
+printf("Calculated square root\n");
 
 
     //
@@ -116,6 +120,7 @@ void apply_force( particle_t &particle, particle_t &neighbor , double *dmin, dou
     double coef = ( 1 - cutoff / r ) / r2 / mass;
     particle.ax += coef * dx;
     particle.ay += coef * dy;
+
 }
 
 void applyForce(particle_t &particle, particle_t &neighbor)
@@ -129,6 +134,10 @@ void applyForce(particle_t &particle, particle_t &neighbor)
 	}
 	r2 = fmax(r2, min_r*min_r);
 	double r = sqrt(r2);
+	
+	double coef = (1 - cutoff / r) / r2 / mass;
+	particle.ax += coef *dx;
+	particle.ay += coef * dy;
 }
 
 //
